@@ -182,7 +182,7 @@ export default function Home() {
                 description="A web tool for managing configurations with version control, role-based permissions, and approval workflows."
                 technologies={['Java Spring Boot', 'AWS DynamoDB', 'AWS EC2', 'React', 'TypeScript']}
                 githubLink="https://github.com/aparnaroy/capital-one-config"
-                demoLink="#"
+                demoLink="https://capital-one-config.vercel.app"
                 imageUrl="/images/capital-one.png"
               />
             </motion.div>
@@ -197,7 +197,7 @@ export default function Home() {
                 description="A voice-assisted health app for managing doctor appointments, medications, and emergency contacts."
                 technologies={['React', 'TypeScript', 'MongoDB', 'Gemini API']}
                 githubLink="https://github.com/aparnaroy/Care-o-Clock"
-                demoLink="#"
+                demoLink="https://care-oclock.vercel.app"
                 imageUrl="/images/care-oclock.png"
               />
             </motion.div>
@@ -212,7 +212,7 @@ export default function Home() {
                 description="A recipe-keeping app with user authentication, recipe imports, grocery lists, and meal planning."
                 technologies={['MongoDB', 'Angular', 'Node.js', 'Express', 'OpenAI API']}
                 githubLink="https://github.com/aparnaroy/Aroma"
-                demoLink="#"
+                demoLink="https://aroma-app.vercel.app"
                 imageUrl="/images/aroma.png"
               />
             </motion.div>
@@ -227,7 +227,7 @@ export default function Home() {
                 description="A website bridging the gap between hearing and signing communities with live ASL translation."
                 technologies={['React', 'TypeScript', 'HTML/CSS']}
                 githubLink="https://github.com/aparnaroy/TalkToTheHand"
-                demoLink="#"
+                demoLink="https://talk-to-the-hand.vercel.app"
                 imageUrl="/images/talk-to-hand.png"
               />
             </motion.div>
