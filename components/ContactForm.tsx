@@ -36,7 +36,7 @@ export default function ContactForm() {
   return (
     <motion.form
       onSubmit={handleSubmit}
-      className="space-y-6"
+      className="space-y-6 bg-white/50 dark:bg-dark/50 backdrop-blur-md p-8 rounded-lg shadow-lg"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -103,10 +103,10 @@ export default function ContactForm() {
       </button>
 
       {status === 'success' && (
-        <p className="text-green-500 text-center">Message sent successfully!</p>
+        <p className="text-green-500 text-center font-bold">Message sent successfully!</p>
       )}
       {status === 'error' && (
-        <p className="text-red-500 text-center">Something went wrong. Please try again.</p>
+        <p className="text-red-500 text-center font-bold">Something went wrong. Please try again.</p>
       )}
     </motion.form>
   )

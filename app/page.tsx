@@ -60,6 +60,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
+            {/* <div className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-[#e82389] via-[#8623e8] to-[#23c7e8]"> */}
             <div className="inline-block">
               <Typewriter
                 words={['Software Engineer', 'Full Stack Developer', 'AI Enthusiast']}
@@ -68,7 +69,7 @@ export default function Home() {
                 cursorStyle="_"
                 typeSpeed={70}
                 deleteSpeed={50}
-                delaySpeed={2000}
+                delaySpeed={3000}
               />
             </div>
           </motion.div>
