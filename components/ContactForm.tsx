@@ -1,11 +1,16 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { FiSend } from 'react-icons/fi'
+import emailjs from '@emailjs/browser'
 
 export default function ContactForm() {
+  const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '';
+  const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '';
+  const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || '';
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -13,17 +18,39 @@ export default function ContactForm() {
   })
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
 
+  useEffect(() => {
+    // Initialize EmailJS with my public key
+    emailjs.init(publicKey)
+  }, [])
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setStatus('loading')
 
     try {
-      // Here you would typically send the form data to your backend
-      // For now, we'll simulate a successful submission
-      await new Promise(resolve => setTimeout(resolve, 1000))
+      const result = await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          to_email: 'deviroy2@gmail.com',
+          timestamp: new Date().toLocaleString()
+        }
+      )
+
       setStatus('success')
       setFormData({ name: '', email: '', message: '' })
     } catch (error) {
+      console.error('Error sending email:', error)
+      if (error instanceof Error) {
+        console.error('Error details:', {
+          message: error.message,
+          name: error.name,
+          stack: error.stack
+        })
+      }
       setStatus('error')
     }
   }
@@ -36,7 +63,7 @@ export default function ContactForm() {
   return (
     <motion.form
       onSubmit={handleSubmit}
-      className="space-y-6 bg-white/50 dark:bg-dark/50 backdrop-blur-md p-8 rounded-lg shadow-lg"
+      className="space-y-6 bg-white/50 dark:bg-dark/50 backdrop-blur-sm p-8 rounded-lg shadow-lg"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -103,10 +130,12 @@ export default function ContactForm() {
       </button>
 
       {status === 'success' && (
-        <p className="text-green-500 text-center font-bold">Message sent successfully!</p>
+        <p className="text-green-500 text-center">Message sent successfully!</p>
       )}
       {status === 'error' && (
-        <p className="text-red-500 text-center font-bold">Something went wrong. Please try again.</p>
+        <p className="text-red-500 text-center">
+          Something went wrong. Please try again or contact me directly at deviroy2@gmail.com
+        </p>
       )}
     </motion.form>
   )
