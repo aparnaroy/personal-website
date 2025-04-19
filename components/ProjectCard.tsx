@@ -59,11 +59,11 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <motion.div
-      className="card group"
+      className="card group h-[400px] flex flex-col"
       whileHover={{ y: -10 }}
       transition={{ duration: 0.01 }}
     >
-      <div className="relative h-48 mb-4 overflow-hidden rounded-lg">
+      <div className="relative h-36 mb-2 overflow-hidden rounded-lg">
         <Image
           src={imageUrl}
           alt={title}
@@ -71,19 +71,19 @@ export default function ProjectCard({
           className="object-cover transition-transform duration-300 group-hover:scale-110"
         />
       </div>
-      <h3 className="text-xl font-bold mb-2">{title}</h3>
-      <p className="text-gray-600 dark:text-gray-300 mb-4">{description}</p>
-      <div className="flex flex-wrap gap-2 mb-4">
+      <h3 className="text-xl font-bold mb-1">{title}</h3>
+      <p className="text-gray-600 dark:text-gray-300 mb-2">{description}</p>
+      <div className="flex flex-wrap gap-1.5 mb-2">
         {technologies.map((tech, index) => (
           <span
             key={index}
-            className={`px-2 py-1 text-sm rounded-full ${getTechColor(tech)}`}
+            className={`px-1.5 py-1 text-xs rounded-full ${getTechColor(tech)}`}
           >
             {tech}
           </span>
         ))}
       </div>
-      <div className="flex space-x-4">
+      <div className="flex space-x-4 mt-auto">
         <a
           href={githubLink}
           target="_blank"
