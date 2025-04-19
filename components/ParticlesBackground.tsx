@@ -57,7 +57,7 @@ export default function ParticlesBackground({ className }: ParticlesBackgroundPr
               value: ['#23c7e8', '#8623e8', '#e82389'],
             },
             links: {
-              color: '#23c7e8',
+              color: '#8623e8',
               distance: 150,
               enable: true,
               opacity: 0.5,

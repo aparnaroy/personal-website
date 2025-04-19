@@ -14,6 +14,8 @@ import { Typewriter } from 'react-simple-typewriter'
 import Image from 'next/image'
 import Footer from '../components/Footer'
 import Skills from '../components/Skills'
+import AboutSection from '../components/AboutSection'
+import Link from 'next/link'
 
 export default function Home() {
   const { theme, toggleTheme } = useTheme()
@@ -43,7 +45,7 @@ export default function Home() {
       {/* Hero Section */}
       <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-10">
         <ParticlesBackground className="absolute inset-0" />
-        <div className="container mx-auto px-4 text-center relative z-10">
+        <div className="container mx-auto px-4 text-center relative z-10 select-none">
           <motion.h1 
             className="text-6xl md:text-8xl font-fancy text-primary mb-12"
             initial={{ opacity: 0, y: 20 }}
@@ -109,51 +111,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-gray-50 dark:bg-dark-lighter">
-        <div className="container mx-auto px-4">
-          <motion.h2 
-            className="section-title"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            About Me
-          </motion.h2>
-          <div className="flex flex-col md:flex-row items-center gap-12 max-w-5xl mx-auto">
-            <motion.div
-              className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-primary"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              <Image
-                src="/images/profile.jpg"
-                alt="Aparna Roy"
-                fill
-                className="object-cover"
-              />
-            </motion.div>
-            <motion.div
-              className="flex-1 text-center md:text-left"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-            >
-              <p className="text-lg mb-4">
-                I'm a Computer Science student at the University of Delaware with a passion for software development and artificial intelligence.
-                I specialize in full-stack development and have experience working with various technologies and frameworks.
-              </p>
-              <p className="text-lg">
-                When I'm not coding, you can find me teaching young students programming, participating in hackathons,
-                or exploring new technologies and frameworks.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      <AboutSection />
 
       {/* Skills Section */}
       <section id="skills" className="py-20">
