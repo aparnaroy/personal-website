@@ -13,8 +13,8 @@ const pacifico = Pacifico({
 })
 
 export const metadata: Metadata = {
-  title: 'Aparna Roy | Software Engineer',
-  description: 'Personal portfolio website of Aparna Roy',
+  title: 'Aparna Roy',
+  description: 'Aparna Roy\'s Personal Portfolio Website',
 }
 
 export default function RootLayout({

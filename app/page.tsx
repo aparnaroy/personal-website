@@ -122,7 +122,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-3xl font-bold text-center mb-12"
+            className="text-4xl font-bold text-center mb-6"
           >
             Skills
           </motion.h2>
@@ -161,7 +161,7 @@ export default function Home() {
                 technologies={['Java Spring Boot', 'AWS DynamoDB', 'AWS EC2', 'React', 'TypeScript']}
                 githubLink="https://github.com/aparnaroy/capital-one-config"
                 demoLink="https://capital-one-config.vercel.app"
-                imageUrl="/images/capital-one.png"
+                imageUrl="/images/config-manager.png"
               />
             </motion.div>
             <motion.div
@@ -176,7 +176,7 @@ export default function Home() {
                 technologies={['React', 'TypeScript', 'MongoDB', 'Gemini API']}
                 githubLink="https://github.com/aparnaroy/Care-o-Clock"
                 demoLink="https://care-oclock.vercel.app"
-                imageUrl="/images/care-oclock.png"
+                imageUrl="/images/care-o-clock.png"
               />
             </motion.div>
             <motion.div
@@ -206,7 +206,7 @@ export default function Home() {
                 technologies={['React', 'TypeScript', 'HTML/CSS']}
                 githubLink="https://github.com/aparnaroy/TalkToTheHand"
                 demoLink="https://talk-to-the-hand.vercel.app"
-                imageUrl="/images/talk-to-hand.png"
+                imageUrl="/images/talk-to-the-hand.png"
               />
             </motion.div>
           </motion.div>

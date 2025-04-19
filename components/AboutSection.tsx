@@ -156,17 +156,17 @@ export default function AboutSection() {
         >
           About Me
         </motion.h2>
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-0">
           {activeTab === 0 ? (
             <motion.div 
-              className="flex flex-col md:flex-row items-start gap-16"
+              className="flex flex-col md:flex-row items-start gap-8 md:gap-16"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <motion.div 
-                className="relative w-72 h-72 rounded-full overflow-hidden border-4 border-primary"
+                className="relative w-60 h-60 rounded-full overflow-hidden border-4 border-primary mx-auto lg:w-72 lg:h-72"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}

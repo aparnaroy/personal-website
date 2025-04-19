@@ -124,9 +124,9 @@ export default function Navbar() {
           {isMobileMenuOpen && (
             <motion.div
               className="md:hidden absolute top-16 left-0 right-0 bg-white/80 dark:bg-dark/80 backdrop-blur-md shadow-lg"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 15 }}
+              exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.3 }}
             >
               <div className="container mx-auto px-4 py-4 space-y-4">

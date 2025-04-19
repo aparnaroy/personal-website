@@ -126,37 +126,43 @@ const skillCategories: SkillCategory[] = [
 
 export default function Skills() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {skillCategories.map((category, index) => (
-        <motion.div
-          key={category.title}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: index * 0.1 }}
-          className="bg-white dark:bg-dark-lighter p-6 rounded-lg shadow-lg"
-        >
-          <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
-            {category.title}
-          </h3>
-          <div className="flex flex-wrap gap-3">
-            {category.skills.map((skill) => (
-              <motion.div
-                key={skill.name}
-                whileHover={{ y: -5 }}
-                className="flex items-center gap-2 px-3 py-1.5 bg-gray-50 dark:bg-dark rounded-full"
-              >
-                <div style={{ color: skill.color }} className="text-xl">
-                  {skill.icon}
-                </div>
-                <span className="text-sm text-gray-700 dark:text-gray-300">
-                  {skill.name}
-                </span>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-      ))}
+    <div className="px-4 md:px-0">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {skillCategories.map((category, index) => (
+          <motion.div
+            key={category.title}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: index * 0.1 }}
+            className="relative bg-white dark:bg-dark-lighter p-6 rounded-lg shadow-lg"
+            // style={{
+            //   border: '3px solid transparent',
+            //   borderImage: 'linear-gradient(to bottom right, #e82389, #8623e8, #23c7e8) 1',
+            // }}          
+          >
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 text-center">
+              {category.title}
+            </h3>
+            <div className="flex flex-wrap justify-center gap-3">
+              {category.skills.map((skill) => (
+                <motion.div
+                  key={skill.name}
+                  whileHover={{ y: -5 }}
+                  className="flex items-center gap-2 px-3 py-1.5 bg-gray-50 dark:bg-dark rounded-full select-none"
+                >
+                  <div style={{ color: skill.color }} className="text-xl">
+                    {skill.icon}
+                  </div>
+                  <span className="text-sm text-gray-700 dark:text-gray-300">
+                    {skill.name}
+                  </span>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        ))}
+      </div>
     </div>
   )
 } 

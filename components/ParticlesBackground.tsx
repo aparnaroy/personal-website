@@ -47,7 +47,7 @@ export default function ParticlesBackground({ className }: ParticlesBackgroundPr
                 quantity: 4,
               },
               repulse: {
-                distance: 200,
+                distance: 160,
                 duration: 0.4,
               },
             },
@@ -70,7 +70,7 @@ export default function ParticlesBackground({ className }: ParticlesBackgroundPr
                 default: 'bounce',
               },
               random: false,
-              speed: 1,
+              speed: .7,
               straight: false,
             },
             number: {

@@ -4,6 +4,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
+
 interface ExperienceCardProps {
   title: string
   company: string
@@ -48,7 +49,7 @@ export default function ExperienceCard({
             </div>
             <div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white">{title}</h3>
-              <p className="text-primary">{company}</p>
+              <p className="text-primary font-bold">{company}</p>
             </div>
           </div>
           <p className="text-gray-600 dark:text-gray-300">{period}</p>
