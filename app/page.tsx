@@ -76,15 +76,34 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <a href="https://github.com/aparnaroy" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-primary transition-colors">
+            <motion.a 
+              href="https://github.com/aparnaroy" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-2xl hover:text-primary transition-colors"
+              whileHover={{ y: -5, scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <FiGithub />
-            </a>
-            <a href="https://linkedin.com/in/aparna-roy1" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-primary transition-colors">
+            </motion.a>
+            <motion.a 
+              href="https://linkedin.com/in/aparna-roy1" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-2xl hover:text-primary transition-colors"
+              whileHover={{ y: -5, scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <FiLinkedin />
-            </a>
-            <a href="mailto:deviroy2@gmail.com" className="text-2xl hover:text-primary transition-colors">
+            </motion.a>
+            <motion.a 
+              href="mailto:deviroy2@gmail.com" 
+              className="text-2xl hover:text-primary transition-colors"
+              whileHover={{ y: -5, scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <FiMail />
-            </a>
+            </motion.a>
           </motion.div>
         </div>
       </section>
