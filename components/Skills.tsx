@@ -132,7 +132,7 @@ export default function Skills() {
           <motion.div
             key={category.title}
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0, boxShadow: '0 1px 20px rgba(0, 0, 0, 0.2)' }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: index * 0.1 }}
             className="relative bg-white dark:bg-dark-lighter p-6 rounded-lg shadow-lg"

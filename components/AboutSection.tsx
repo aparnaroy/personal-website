@@ -61,10 +61,10 @@ export default function AboutSection() {
                 Honors Bachelor of Science in Computer Science
                 </p>
                 <p className="text-[0.9rem] text-gray-500 dark:text-gray-400 mt-1">
-                    Concentration: Software Engineering & Artificial Intelligence
+                    <span className="font-medium">Concentration: </span>Software Engineering & Artificial Intelligence
                 </p>
                 <p className="text-[0.9rem] text-gray-500 dark:text-gray-400 mt-1">
-                    Minors: Cognitive Science, Game Studies
+                    <span className="font-medium">Minors: </span>Cognitive Science, Game Studies
                 </p>
               </div>
               <div className="text-right text-sm whitespace-nowrap">
@@ -217,21 +217,80 @@ export default function AboutSection() {
       content: (
         <div className="space-y-6">
           <div className="bg-white dark:bg-[#404040] rounded-lg p-6 shadow-sm">
+            <h3 className="text-xl font-bold mb-4">Awards</h3>
             <div className="space-y-4">
-              <div className="flex items-center">
-                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <div>
-                  <p className="text-gray-600 dark:text-gray-300">Dean's List</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Fall 2022, Spring 2023</p>
+              <div className="flex items-start">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2 mt-2"></span>
+                <div className="flex flex-col">
+                    <div className="flex items-baseline">
+                      <p className="text-gray-600 dark:text-gray-300 font-medium">Dean's List</p>
+                      <p className="text-sm text-gray-500 dark:text-gray-400 ml-5">All Semesters (2021 - 2025)</p>
+                    </div>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                    Awarded each semester for maintaining a GPA of 3.5 or higher.
+                    </p>
                 </div>
               </div>
-              <div className="flex items-center">
-                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">National Merit Scholarship</span>
+              <div className="flex items-start">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2 mt-2"></span>
+                <div className="flex flex-col">
+                    <div className="flex items-baseline">
+                      <p className="text-gray-600 dark:text-gray-300 font-medium">B. Bradford Barnes Memorial Scholarship (Full Scholarship)</p>
+                      <p className="text-sm text-gray-500 dark:text-gray-400 ml-5">Fall 2021 - Spring 2025</p>
+                    </div>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                    Awarded each semester for maintaining a GPA of 3.5 or higher.
+                    </p>
+                </div>
               </div>
-              <div className="flex items-center">
-                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">Google Women Techmakers Scholar</span>
+              <div className="flex items-start">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2 mt-2"></span>
+                <div className="flex flex-col">
+                    <div className="flex items-baseline">
+                      <p className="text-gray-600 dark:text-gray-300 font-medium">University of Delaware Trustee Scholarship</p>
+                      <p className="text-sm text-gray-500 dark:text-gray-400 ml-5">Fall 2021 - Spring 2025</p>
+                    </div>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                    Awarded each semester for maintaining a GPA of 3.5 or higher.
+                    </p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2 mt-2"></span>
+                <div className="flex flex-col">
+                    <div className="flex items-baseline">
+                      <p className="text-gray-600 dark:text-gray-300 font-medium">Edward Malin Memorial Scholarship</p>
+                      <p className="text-sm text-gray-500 dark:text-gray-400 ml-5">Spring 2021</p>
+                    </div>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                    Awarded each semester for maintaining a GPA of 3.5 or higher.
+                    </p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2 mt-2"></span>
+                <div className="flex flex-col">
+                    <div className="flex items-baseline">
+                      <p className="text-gray-600 dark:text-gray-300 font-medium">Carson Scholarship</p>
+                      <p className="text-sm text-gray-500 dark:text-gray-400 ml-5">2016 - 2020</p>
+                    </div>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                    Awarded each semester for maintaining a GPA of 3.5 or higher.
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white dark:bg-[#404040] rounded-lg p-6 shadow-sm">
+            <h3 className="text-xl font-bold mb-4">Certifications</h3>
+            <div className="space-y-3">
+              <div className="flex items-start">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2 mt-2"></span>
+                <div>
+                  <p className="text-gray-600 dark:text-gray-300 font-medium">Amazon Web Services (AWS) Cloud Practitioner</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">August 2024</p>
+                </div>
               </div>
             </div>
           </div>
@@ -310,8 +369,11 @@ export default function AboutSection() {
                     I specialize in full-stack development and have experience working with various technologies and frameworks.
                   </p>
                   <p className="mt-4">
-                    When I'm not coding, you can find me teaching young students programming, participating in hackathons,
-                    or exploring new technologies and frameworks.
+                    When I'm not coding, you can find me teaching students programming, participating in hackathons,
+                    or exploring new technologies.  
+                  </p>
+                  <p className="mt-4">
+                    In my free time, I love to dance, hike, and watch movies/shows.
                   </p>
                 </div>
               </motion.div>

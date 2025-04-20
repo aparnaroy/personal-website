@@ -63,7 +63,7 @@ export default function ProjectCard({
       whileHover={{ y: -10 }}
       transition={{ duration: 0.01 }}
     >
-      <div className="relative w-full h-[360px] mb-5 rounded-md overflow-hidden">
+      <div className="relative w-full h-[341px] mb-5 rounded-md overflow-hidden">
         <Image
           src={imageUrl}
           alt={title}

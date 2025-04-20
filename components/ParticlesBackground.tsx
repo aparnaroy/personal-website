@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useCallback } from 'react'
 import Particles from 'react-tsparticles'
 import { loadSlim } from 'tsparticles-slim'
@@ -13,6 +13,17 @@ interface ParticlesBackgroundProps {
 export default function ParticlesBackground({ className }: ParticlesBackgroundProps) {
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadSlim(engine)
+  }, [])
+
+  // Scroll listener to toggle parallax
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY
+    }
+
+    handleScroll()
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   return (
@@ -36,6 +47,11 @@ export default function ParticlesBackground({ className }: ParticlesBackgroundPr
               onHover: {
                 enable: true,
                 mode: 'repulse',
+                // parallax: {
+                //   enable: true,
+                //   force: 30,  // Near top = strong parallax, otherwise super weak
+                //   smooth: 100,
+                // }
               },
               resize: {
                 enable: true,
@@ -49,6 +65,8 @@ export default function ParticlesBackground({ className }: ParticlesBackgroundPr
               repulse: {
                 distance: 160,
                 duration: 0.4,
+                speed: 0.5,
+                easing: 'ease-out',
               },
             },
           },
