@@ -44,17 +44,95 @@ export default function AboutSection() {
       title: 'Education',
       content: (
         <div className="space-y-6">
-          <div className="bg-white dark:bg-dark-lighter rounded-lg p-6 shadow-sm">
-            <h3 className="text-xl font-bold mb-2">University of Delaware</h3>
-            <p className="text-gray-600 dark:text-gray-300">Bachelor of Science in Computer Science</p>
-            <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">Expected Graduation: May 2025</p>
+          <div className="bg-white dark:bg-[#404040] rounded-lg p-6 shadow-sm flex items-start gap-4">
+            <div className="relative w-16 h-16 flex-shrink-0">
+                <Image
+                src="/images/ud-logo.png"
+                alt="University Logo"
+                fill
+                className="object-contain rounded"
+                />
+            </div>
+
+            <div className="flex justify-between items-start w-full">
+              <div className="flex-1">
+                <h3 className="text-xl font-bold mb-2">University of Delaware</h3>
+                <p className="text-[1.05rem] text-gray-600 dark:text-gray-300 mb-2">
+                Honors Bachelor of Science in Computer Science
+                </p>
+                <p className="text-[0.9rem] text-gray-500 dark:text-gray-400 mt-1">
+                    Concentration: Software Engineering & Artificial Intelligence
+                </p>
+                <p className="text-[0.9rem] text-gray-500 dark:text-gray-400 mt-1">
+                    Minors: Cognitive Science, Game Studies
+                </p>
+              </div>
+              <div className="text-right text-sm whitespace-nowrap">
+                <p className="text-[0.9rem] text-gray-400 dark:text-gray-450 mt-1">
+                    Aug 2021 – May 2025
+                </p>
+                <p className="text-[0.9rem] text-gray-400 dark:text-gray-450 mt-2">
+                    GPA: 3.99
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="bg-white dark:bg-dark-lighter rounded-lg p-6 shadow-sm">
+          <div className="bg-white dark:bg-[#404040] rounded-lg p-6 shadow-sm">
             <h3 className="text-xl font-bold mb-4">Relevant Coursework</h3>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-3 gap-4">
               <div className="flex items-center">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">Data Structures & Algorithms</span>
+                <span className="text-gray-600 dark:text-gray-300">Data Structures</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                <span className="text-gray-600 dark:text-gray-300">Web Applications Security</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                <span className="text-gray-600 dark:text-gray-300">Operating Systems</span>
+              </div>
+              
+              
+
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                <span className="text-gray-600 dark:text-gray-300">Algorithms</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                <span className="text-gray-600 dark:text-gray-300">Secure Software Design</span>
+              </div>
+              
+
+
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                <span className="text-gray-600 dark:text-gray-300">Educational Game Development</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                <span className="text-gray-600 dark:text-gray-300">Software Engineering</span>
+              </div>
+              
+
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                <span className="text-gray-600 dark:text-gray-300">Advanced Web Technologies</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                <span className="text-gray-600 dark:text-gray-300">Parallel Computing</span>
+              </div>
+              
+
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                <span className="text-gray-600 dark:text-gray-300">Human-Computer Interaction</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                <span className="text-gray-600 dark:text-gray-300">Systems Programming</span>
               </div>
               <div className="flex items-center">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
@@ -62,15 +140,28 @@ export default function AboutSection() {
               </div>
               <div className="flex items-center">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">Software Engineering</span>
-              </div>
-              <div className="flex items-center">
-                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">Computer Networks</span>
-              </div>
-              <div className="flex items-center">
-                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
                 <span className="text-gray-600 dark:text-gray-300">Artificial Intelligence</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                <span className="text-gray-600 dark:text-gray-300">Discrete Mathematics</span>
+              </div>
+            
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                <span className="text-gray-600 dark:text-gray-300">AI in Education</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                <span className="text-gray-600 dark:text-gray-300">Statistical Methods</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                <span className="text-gray-600 dark:text-gray-300">Logic for Programming</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                <span className="text-gray-600 dark:text-gray-300">Machine Organization</span>
               </div>
             </div>
           </div>
@@ -81,13 +172,32 @@ export default function AboutSection() {
       title: 'Activities',
       content: (
         <div className="space-y-6">
-          <div className="bg-white dark:bg-dark-lighter rounded-lg p-6 shadow-sm">
+          <div className="bg-white dark:bg-[#404040] rounded-lg p-6 shadow-sm">
+            <h3 className="text-xl font-bold mb-4">Clubs & Organizations</h3>
+            <div className="space-y-3">
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                <span className="text-gray-600 dark:text-gray-300">Association for Computing Machinery - Women in Computing (ACM-W)</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                <span className="text-gray-600 dark:text-gray-300">CS+ Social Good</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                <span className="text-gray-600 dark:text-gray-300">Society of Asian Scientists and Engineers (SASE)</span>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white dark:bg-[#404040] rounded-lg p-6 shadow-sm">
             <h3 className="text-xl font-bold mb-4">Hackathons</h3>
             <div className="space-y-3">
               <div className="flex items-center">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                {/* Technica 2022 (UMD), HenHacks 2023 (UD), Technica 2023 (UMD), HenHacks 2024 (UD) - 1st Place LabWare Connections Hack, HenHacks 2025 (UD) - 2nd place in the Health & Wellness category */}
+                
                 <div>
-                  <p className="text-gray-600 dark:text-gray-300">Hack UD 2023</p>
+                  <p className="text-gray-600 dark:text-gray-300">Technica 2022</p>
                   <p className="text-sm text-gray-500 dark:text-gray-400">1st Place</p>
                 </div>
               </div>
@@ -95,21 +205,7 @@ export default function AboutSection() {
                 <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
                 <div>
                   <p className="text-gray-600 dark:text-gray-300">Hack the North 2023</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Finalist</p>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div className="bg-white dark:bg-dark-lighter rounded-lg p-6 shadow-sm">
-            <h3 className="text-xl font-bold mb-4">Clubs & Organizations</h3>
-            <div className="space-y-3">
-              <div className="flex items-center">
-                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">Women in Computer Science</span>
-              </div>
-              <div className="flex items-center">
-                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">Association for Computing Machinery</span>
               </div>
             </div>
           </div>
@@ -120,7 +216,7 @@ export default function AboutSection() {
       title: 'Achievements',
       content: (
         <div className="space-y-6">
-          <div className="bg-white dark:bg-dark-lighter rounded-lg p-6 shadow-sm">
+          <div className="bg-white dark:bg-[#404040] rounded-lg p-6 shadow-sm">
             <div className="space-y-4">
               <div className="flex items-center">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
@@ -145,7 +241,7 @@ export default function AboutSection() {
   ]
 
   return (
-    <section id="about" className="py-20 bg-gray-50 dark:bg-dark-lighter">
+    <section id="about" className="py-20 bg-gray-100 dark:bg-dark-lighter">
       <div className="container mx-auto px-4">
         <motion.h2 
           className="section-title"

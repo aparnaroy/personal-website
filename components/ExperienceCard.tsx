@@ -9,7 +9,7 @@ interface ExperienceCardProps {
   title: string
   company: string
   period: string
-  description: string
+  description: string[]
   skills: string[]
   logoUrl: string
   isLast?: boolean
@@ -37,9 +37,9 @@ export default function ExperienceCard({
       <div className="absolute left-[-4px] top-0 w-3 h-3 rounded-full bg-primary" />
       
       <div className="card bg-white dark:bg-dark-lighter shadow-lg hover:shadow-xl transition-shadow">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+        <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
           <div className="flex items-center gap-4">
-            <div className="relative w-12 h-12">
+            <div className="relative w-[60px] h-[60px]">
               <Image
                 src={logoUrl}
                 alt={`${company} logo`}
@@ -48,13 +48,20 @@ export default function ExperienceCard({
               />
             </div>
             <div>
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white">{title}</h3>
-              <p className="text-primary font-bold">{company}</p>
+              <h3 className="text-[1.3rem] font-bold text-gray-900 dark:text-white">{title}</h3>
+              <p className="text-[1.07rem] text-primary font-bold">{company}</p>
             </div>
           </div>
-          <p className="text-gray-600 dark:text-gray-300">{period}</p>
+          <p className="text-gray-500 dark:text-gray-300">{period}</p>
         </div>
-        <p className="text-gray-600 dark:text-gray-300 mb-4">{description}</p>
+        {/* <p className="text-gray-600 dark:text-gray-300 mb-4">{description}</p> */}
+        <ul className="text-gray-600 dark:text-gray-300 mb-4 list-disc pl-4">
+          {description.map((point, index) => (
+            <li key={index} className="mb-2">
+              {point}
+            </li>
+          ))}
+        </ul>
         <div className="flex flex-wrap gap-2">
           {skills.map((skill, index) => (
             <span

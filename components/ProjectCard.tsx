@@ -59,16 +59,16 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <motion.div
-      className="card group h-[400px] flex flex-col"
+      className="card group h-[600px] flex flex-col p-5 rounded-lg overflow-hidden"
       whileHover={{ y: -10 }}
       transition={{ duration: 0.01 }}
     >
-      <div className="relative h-56 mb-2 rounded-lg">
+      <div className="relative w-full h-[360px] mb-5 rounded-md overflow-hidden">
         <Image
           src={imageUrl}
           alt={title}
-          fill
-          className="object-cover transition-transform duration-300 group-hover:scale-110"
+          layout="fill"
+          className="object-cover"
         />
       </div>
       <h3 className="text-xl font-bold mb-3">{title}</h3>
@@ -82,9 +82,9 @@ export default function ProjectCard({
           </span>
         ))}
       </div>
-      <p className="text-sm text-gray-600 dark:text-gray-300 mb-0">{description}</p>
+      <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">{description}</p>
 
-      <div className="flex space-x-4 mt-auto">
+      <div className="flex space-x-6 mt-auto">
         <a
           href={githubLink}
           target="_blank"
