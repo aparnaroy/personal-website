@@ -36,7 +36,8 @@ export default function ExperienceCard({
       {/* Timeline dot */}
       <div className="absolute left-[-4px] top-0 w-3 h-3 rounded-full bg-primary" />
       
-      <div className="card bg-white dark:bg-dark-lighter shadow-lg hover:shadow-xl transition-shadow">
+      {/* <div className="bg-white dark:bg-dark shadow-lg dark:shadow-[0_4px_20px_rgba(195,195,195,0.1)] hover:shadow-xl dark:hover:shadow-[0_8px_30px_rgba(195,195,195,0.14)] transition-shadow rounded-lg p-6"> */}
+      <div className="bg-white dark:bg-[#404040] shadow-lg hover:shadow-xl transition-shadow rounded-lg p-6">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
           <div className="flex items-center gap-4">
             <div className="relative w-[60px] h-[60px]">

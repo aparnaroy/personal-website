@@ -39,7 +39,10 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen relative">
+      {/* Background that starts after hero */}
+      <div className="absolute inset-x-0 top-[100vh] bottom-0 bg-white dark:bg-dark -z-10" />
+      
       <Navbar />
       
       {/* Hero Section */}
@@ -214,7 +217,7 @@ export default function Home() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="py-20 bg-gray-100 dark:bg-dark">
+      <section id="experience" className="py-20 bg-gray-100 dark:bg-dark-lighter">
         <div className="container mx-auto px-4">
           <motion.h2 
             className="section-title"

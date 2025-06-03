@@ -26,7 +26,6 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${pacifico.variable} font-sans bg-white dark:bg-dark text-gray-900 dark:text-gray-100`}>
         <ThemeProvider>
-          <ParticlesBackground className="fixed inset-0 -z-10" />
           <div className="relative z-10">
             {children}
           </div>

@@ -27,7 +27,7 @@ export default function ParticlesBackground({ className }: ParticlesBackgroundPr
   }, [])
 
   return (
-    <div className={className}>
+    <div className={`absolute inset-0 -z-20 ${className}`}>
       <Particles
         id="tsparticles"
         init={particlesInit}
