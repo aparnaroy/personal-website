@@ -44,7 +44,7 @@ export default function AboutSection() {
       title: 'Education',
       content: (
         <div className="space-y-6">
-          <div className="bg-white dark:bg-[#404040] rounded-lg p-6 shadow-sm flex items-start gap-4">
+          <div className="bg-white dark:bg-[#404040] rounded-lg p-6 shadow-sm flex flex-col md:flex-row items-start gap-4">
             <div className="relative w-16 h-16 flex-shrink-0">
                 <Image
                 src="/images/ud-logo.png"
@@ -54,114 +54,113 @@ export default function AboutSection() {
                 />
             </div>
 
-            <div className="flex justify-between items-start w-full">
+            <div className="flex flex-col md:flex-row md:justify-between w-full gap-4">
               <div className="flex-1">
-                <h3 className="text-xl font-bold mb-2">University of Delaware</h3>
-                <p className="text-[1.05rem] text-gray-600 dark:text-gray-300 mb-2">
-                Honors Bachelor of Science in Computer Science
+                <h3 className="text-[1.15rem] font-bold mb-2">University of Delaware</h3>
+                <p className="md:text-[1.05rem] text-[0.95rem] text-gray-600 dark:text-gray-300 mb-2">
+                  Honors Bachelor of Science in Computer Science
                 </p>
-                <p className="text-[0.9rem] text-gray-500 dark:text-gray-400 mt-1">
-                    <span className="font-medium">Concentration: </span>Software Engineering & Artificial Intelligence
-                </p>
-                <p className="text-[0.9rem] text-gray-500 dark:text-gray-400 mt-1">
-                    <span className="font-medium">Minors: </span>Cognitive Science, Game Studies
-                </p>
-              </div>
-              <div className="text-right text-sm whitespace-nowrap">
-                <p className="text-[0.9rem] text-gray-400 dark:text-gray-450 mt-1">
+                <div className="md:hidden text-sm mb-2">
+                  <p className="md:text-[0.9rem] text-[0.8rem] text-gray-400 dark:text-gray-450">
                     Aug 2021 – May 2025
+                  </p>
+                  <p className="md:text-[0.9rem] text-[0.8rem] text-gray-400 dark:text-gray-450 mt-1">
+                    GPA: 3.99
+                  </p>
+                </div>
+                <div className="space-y-1">
+                  <p className="md:text-[0.9rem] text-[0.85rem] text-gray-500 dark:text-gray-400">
+                    <span className="font-medium">Concentration: </span>Software Engineering & Artificial Intelligence
+                  </p>
+                  <p className="md:text-[0.9rem] text-[0.85rem] text-gray-500 dark:text-gray-400">
+                    <span className="font-medium">Minors: </span>Cognitive Science, Game Studies
+                  </p>
+                </div>
+              </div>
+              <div className="hidden md:block md:text-right text-sm">
+                <p className="text-[0.9rem] text-gray-400 dark:text-gray-450">
+                  Aug 2021 – May 2025
                 </p>
                 <p className="text-[0.9rem] text-gray-400 dark:text-gray-450 mt-2">
-                    GPA: 3.99
+                  GPA: 3.99
                 </p>
               </div>
             </div>
           </div>
           <div className="bg-white dark:bg-[#404040] rounded-lg p-6 shadow-sm">
             <h3 className="text-xl font-bold mb-4">Relevant Coursework</h3>
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
               <div className="flex items-center">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">Data Structures</span>
+                <span className="text-sm text-gray-600 dark:text-gray-300">Data Structures</span>
               </div>
               <div className="flex items-center">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">Web Applications Security</span>
+                <span className="text-sm text-gray-600 dark:text-gray-300">Web Applications Security</span>
               </div>
               <div className="flex items-center">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">Operating Systems</span>
-              </div>
-              
-              
-
-              <div className="flex items-center">
-                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">Algorithms</span>
+                <span className="text-sm text-gray-600 dark:text-gray-300">Operating Systems</span>
               </div>
               <div className="flex items-center">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">Secure Software Design</span>
-              </div>
-              
-
-
-              <div className="flex items-center">
-                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">Educational Game Development</span>
+                <span className="text-sm text-gray-600 dark:text-gray-300">Algorithms</span>
               </div>
               <div className="flex items-center">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">Software Engineering</span>
-              </div>
-              
-
-              <div className="flex items-center">
-                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">Advanced Web Technologies</span>
+                <span className="text-sm text-gray-600 dark:text-gray-300">Secure Software Design</span>
               </div>
               <div className="flex items-center">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">Parallel Computing</span>
-              </div>
-              
-
-              <div className="flex items-center">
-                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">Human-Computer Interaction</span>
+                <span className="text-sm text-gray-600 dark:text-gray-300">Educational Game Development</span>
               </div>
               <div className="flex items-center">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">Systems Programming</span>
+                <span className="text-sm text-gray-600 dark:text-gray-300">Software Engineering</span>
               </div>
               <div className="flex items-center">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">Database Systems</span>
+                <span className="text-sm text-gray-600 dark:text-gray-300">Advanced Web Technologies</span>
               </div>
               <div className="flex items-center">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">Artificial Intelligence</span>
+                <span className="text-sm text-gray-600 dark:text-gray-300">Parallel Computing</span>
               </div>
               <div className="flex items-center">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">Discrete Mathematics</span>
-              </div>
-            
-              <div className="flex items-center">
-                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">AI in Education</span>
+                <span className="text-sm text-gray-600 dark:text-gray-300">Human-Computer Interaction</span>
               </div>
               <div className="flex items-center">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">Statistical Methods</span>
+                <span className="text-sm text-gray-600 dark:text-gray-300">Systems Programming</span>
               </div>
               <div className="flex items-center">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">Logic for Programming</span>
+                <span className="text-sm text-gray-600 dark:text-gray-300">Database Systems</span>
               </div>
               <div className="flex items-center">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">Machine Organization</span>
+                <span className="text-sm text-gray-600 dark:text-gray-300">Artificial Intelligence</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                <span className="text-sm text-gray-600 dark:text-gray-300">Discrete Mathematics</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                <span className="text-sm text-gray-600 dark:text-gray-300">AI in Education</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                <span className="text-sm text-gray-600 dark:text-gray-300">Statistical Methods</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                <span className="text-sm text-gray-600 dark:text-gray-300">Logic for Programming</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                <span className="text-sm text-gray-600 dark:text-gray-300">Machine Organization</span>
               </div>
             </div>
           </div>
@@ -175,37 +174,55 @@ export default function AboutSection() {
           <div className="bg-white dark:bg-[#404040] rounded-lg p-6 shadow-sm">
             <h3 className="text-xl font-bold mb-4">Clubs & Organizations</h3>
             <div className="space-y-3">
-              <div className="flex items-center">
-                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">Association for Computing Machinery - Women in Computing (ACM-W)</span>
+              <div className="flex items-start">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2 mt-2"></span>
+                <div className="flex-1">
+                  <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+                    <p className="text-gray-600 dark:text-gray-300 text-[0.95rem] sm:text-[1rem]">Association for Computing Machinery - Women in Computing (ACM-W)</p>
+                  </div>
+                </div>
               </div>
-              <div className="flex items-center">
-                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">CS+ Social Good</span>
+              <div className="flex items-start">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2 mt-2"></span>
+                <div className="flex-1">
+                  <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+                    <p className="text-gray-600 dark:text-gray-300 text-[0.95rem] sm:text-[1rem]">CS+ Social Good</p>
+                  </div>
+                </div>
               </div>
-              <div className="flex items-center">
-                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <span className="text-gray-600 dark:text-gray-300">Society of Asian Scientists and Engineers (SASE)</span>
+              <div className="flex items-start">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2 mt-2"></span>
+                <div className="flex-1">
+                  <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+                    <p className="text-gray-600 dark:text-gray-300 text-[0.95rem] sm:text-[1rem]">Society of Asian Scientists and Engineers (SASE)</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div className="bg-white dark:bg-[#404040] rounded-lg p-6 shadow-sm">
             <h3 className="text-xl font-bold mb-4">Hackathons</h3>
-            <div className="space-y-3">
-              <div className="flex items-center">
-                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                {/* Technica 2022 (UMD), HenHacks 2023 (UD), Technica 2023 (UMD), HenHacks 2024 (UD) - 1st Place LabWare Connections Hack, HenHacks 2025 (UD) - 2nd place in the Health & Wellness category */}
-                
-                <div>
-                  <p className="text-gray-600 dark:text-gray-300">Technica 2022</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">1st Place</p>
+            <div className="flex items-start">
+              <span className="w-2 h-2 bg-primary rounded-full mr-2 mt-2"></span>
+              <div className="flex-1">
+                <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+                  <p className="text-gray-600 dark:text-gray-300">Dean's List</p>
                 </div>
+                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                  1st Place
+                </p>
               </div>
-              <div className="flex items-center">
-                <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <div>
-                  <p className="text-gray-600 dark:text-gray-300">Hack the North 2023</p>
+            </div>
+            {/* Technica 2022 (UMD), HenHacks 2023 (UD), Technica 2023 (UMD), HenHacks 2024 (UD) - 1st Place LabWare Connections Hack, HenHacks 2025 (UD) - 2nd place in the Health & Wellness category */}
+            <div className="flex items-start mt-3">
+              <span className="w-2 h-2 bg-primary rounded-full mr-2 mt-2"></span>
+              <div className="flex-1">
+                <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+                  <p className="text-gray-600 dark:text-gray-300">Dean's List</p>
                 </div>
+                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                  1st Place
+                </p>
               </div>
             </div>
           </div>
@@ -221,62 +238,62 @@ export default function AboutSection() {
             <div className="space-y-4">
               <div className="flex items-start">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2 mt-2"></span>
-                <div className="flex flex-col">
-                    <div className="flex items-baseline">
-                      <p className="text-gray-600 dark:text-gray-300 font-medium">Dean's List</p>
-                      <p className="text-sm text-gray-500 dark:text-gray-400 ml-5">All Semesters (2021 - 2025)</p>
-                    </div>
-                    <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                <div className="flex-1">
+                  <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+                    <p className="text-gray-600 dark:text-gray-100 font-medium">Dean's List</p>
+                    <p className="text-sm text-gray-400 dark:text-gray-300">All Semesters (2021 - 2025)</p>
+                  </div>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
                     Awarded each semester for maintaining a GPA of 3.5 or higher.
-                    </p>
+                  </p>
                 </div>
               </div>
               <div className="flex items-start">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2 mt-2"></span>
-                <div className="flex flex-col">
-                    <div className="flex items-baseline">
-                      <p className="text-gray-600 dark:text-gray-300 font-medium">B. Bradford Barnes Memorial Scholarship (Full Scholarship)</p>
-                      <p className="text-sm text-gray-500 dark:text-gray-400 ml-5">Fall 2021 - Spring 2025</p>
-                    </div>
-                    <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                <div className="flex-1">
+                  <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+                    <p className="text-gray-600 dark:text-gray-100 font-medium">B. Bradford Barnes Memorial Scholarship (Full Scholarship)</p>
+                    <p className="text-sm text-gray-400 dark:text-gray-300">Fall 2021 - Spring 2025</p>
+                  </div>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
                     Awarded each semester for maintaining a GPA of 3.5 or higher.
-                    </p>
+                  </p>
                 </div>
               </div>
               <div className="flex items-start">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2 mt-2"></span>
-                <div className="flex flex-col">
-                    <div className="flex items-baseline">
-                      <p className="text-gray-600 dark:text-gray-300 font-medium">University of Delaware Trustee Scholarship</p>
-                      <p className="text-sm text-gray-500 dark:text-gray-400 ml-5">Fall 2021 - Spring 2025</p>
-                    </div>
-                    <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                <div className="flex-1">
+                  <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+                    <p className="text-gray-600 dark:text-gray-100 font-medium">University of Delaware Trustee Scholarship</p>
+                    <p className="text-sm text-gray-400 dark:text-gray-300">Fall 2021 - Spring 2025</p>
+                  </div>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
                     Awarded each semester for maintaining a GPA of 3.5 or higher.
-                    </p>
+                  </p>
                 </div>
               </div>
               <div className="flex items-start">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2 mt-2"></span>
-                <div className="flex flex-col">
-                    <div className="flex items-baseline">
-                      <p className="text-gray-600 dark:text-gray-300 font-medium">Edward Malin Memorial Scholarship</p>
-                      <p className="text-sm text-gray-500 dark:text-gray-400 ml-5">Spring 2021</p>
-                    </div>
-                    <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                <div className="flex-1">
+                  <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+                    <p className="text-gray-600 dark:text-gray-100 font-medium">Edward Malin Memorial Scholarship</p>
+                    <p className="text-sm text-gray-400 dark:text-gray-300">Spring 2021</p>
+                  </div>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
                     Awarded each semester for maintaining a GPA of 3.5 or higher.
-                    </p>
+                  </p>
                 </div>
               </div>
               <div className="flex items-start">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2 mt-2"></span>
-                <div className="flex flex-col">
-                    <div className="flex items-baseline">
-                      <p className="text-gray-600 dark:text-gray-300 font-medium">Carson Scholarship</p>
-                      <p className="text-sm text-gray-500 dark:text-gray-400 ml-5">2016 - 2020</p>
-                    </div>
-                    <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                <div className="flex-1">
+                  <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+                    <p className="text-gray-600 dark:text-gray-100 font-medium">Carson Scholarship</p>
+                    <p className="text-sm text-gray-400 dark:text-gray-300">2016 - 2020</p>
+                  </div>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
                     Awarded each semester for maintaining a GPA of 3.5 or higher.
-                    </p>
+                  </p>
                 </div>
               </div>
             </div>
@@ -287,9 +304,11 @@ export default function AboutSection() {
             <div className="space-y-3">
               <div className="flex items-start">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2 mt-2"></span>
-                <div>
-                  <p className="text-gray-600 dark:text-gray-300 font-medium">Amazon Web Services (AWS) Cloud Practitioner</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">August 2024</p>
+                <div className="flex-1">
+                  <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+                    <p className="text-gray-600 dark:text-gray-100 font-medium">Amazon Web Services (AWS) Cloud Practitioner</p>
+                    <p className="text-sm text-gray-400 dark:text-gray-300">August 2024</p>
+                  </div>
                 </div>
               </div>
             </div>

@@ -49,14 +49,17 @@ export default function ExperienceCard({
               />
             </div>
             <div>
-              <h3 className="text-[1.3rem] font-bold text-gray-900 dark:text-white">{title}</h3>
-              <p className="text-[1.07rem] text-primary font-bold">{company}</p>
+              <h3 className="text-[1.15rem] md:text-[1.3rem] font-bold text-gray-900 dark:text-white">{title}</h3>
+              <p className="text-[0.98rem] md:text-[1.07rem] text-primary font-bold">{company}</p>
+              {/* Period aligned under the text block */}
+              <p className="text-[0.85rem] text-gray-500 dark:text-gray-300 mt-2 md:hidden">{period}</p>
             </div>
           </div>
-          <p className="text-gray-500 dark:text-gray-300">{period}</p>
+
+          {/* On larger screens, keep period on the right */}
+          <p className="hidden md:block md:text-[0.95rem] text-gray-500 dark:text-gray-300">{period}</p>
         </div>
-        {/* <p className="text-gray-600 dark:text-gray-300 mb-4">{description}</p> */}
-        <ul className="text-gray-600 dark:text-gray-300 mb-4 list-disc pl-4">
+        <ul className="text-[0.85rem] md:text-[.95rem] text-gray-600 dark:text-gray-300 mb-4 list-disc pl-4">
           {description.map((point, index) => (
             <li key={index} className="mb-2">
               {point}
@@ -67,7 +70,7 @@ export default function ExperienceCard({
           {skills.map((skill, index) => (
             <span
               key={index}
-              className="px-2 py-1 text-sm bg-primary/10 text-primary rounded-full"
+              className="px-2 py-1 text-xs md:text-sm bg-primary/10 text-primary rounded-full"
             >
               {skill}
             </span>
