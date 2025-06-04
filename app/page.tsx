@@ -16,6 +16,7 @@ import Footer from '../components/Footer'
 import Skills from '../components/Skills'
 import AboutSection from '../components/AboutSection'
 import Link from 'next/link'
+import FloatingDots from '../components/FloatingDots'
 
 export default function Home() {
   const { theme, toggleTheme } = useTheme()
@@ -41,7 +42,9 @@ export default function Home() {
   return (
     <main className="min-h-screen relative">
       {/* Background that starts after hero */}
-      <div className="absolute inset-x-0 top-[100vh] bottom-0 bg-white dark:bg-dark -z-10" />
+      <div className="absolute inset-x-0 top-[100vh] bottom-0 bg-white dark:bg-dark -z-10">
+        <FloatingDots />
+      </div>
       
       <Navbar />
       

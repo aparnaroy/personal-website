@@ -47,11 +47,11 @@ export default function ParticlesBackground({ className }: ParticlesBackgroundPr
               onHover: {
                 enable: true,
                 mode: 'repulse',
-                // parallax: {
-                //   enable: true,
-                //   force: 30,  // Near top = strong parallax, otherwise super weak
-                //   smooth: 100,
-                // }
+                parallax: {
+                  enable: true,
+                  force: 30,  // Near top = strong parallax, otherwise super weak
+                  smooth: 100,
+                }
               },
               resize: {
                 enable: true,
@@ -63,9 +63,9 @@ export default function ParticlesBackground({ className }: ParticlesBackgroundPr
                 quantity: 4,
               },
               repulse: {
-                distance: 160,
+                distance: 120,
                 duration: 0.4,
-                speed: 0.5,
+                speed: 0.2,
                 easing: 'ease-out',
               },
             },
@@ -75,7 +75,7 @@ export default function ParticlesBackground({ className }: ParticlesBackgroundPr
               value: ['#23c7e8', '#8623e8', '#e82389'],
             },
             links: {
-              color: '#8623e8',
+              color: '#9640ed',
               distance: 150,
               enable: true,
               opacity: 0.5,
@@ -94,7 +94,7 @@ export default function ParticlesBackground({ className }: ParticlesBackgroundPr
             number: {
               density: {
                 enable: true,
-                area: 800,
+                area: 600,
               },
               value: 80,
             },
