@@ -63,7 +63,7 @@ export default function ContactForm() {
   return (
     <motion.form
       onSubmit={handleSubmit}
-      className="space-y-6 bg-white/50 dark:bg-dark/50 backdrop-blur-sm p-8 rounded-lg shadow-lg"
+      className="space-y-6 bg-white/1 dark:bg-dark/1 backdrop-blur-sm p-8 rounded-lg shadow-[0_8px_40px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_20px_rgba(195,195,195,0.15)]"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}

@@ -11,11 +11,9 @@ import ExperienceCard from '../components/ExperienceCard'
 import ContactForm from '../components/ContactForm'
 import ParticlesBackground from '../components/ParticlesBackground'
 import { Typewriter } from 'react-simple-typewriter'
-import Image from 'next/image'
 import Footer from '../components/Footer'
 import Skills from '../components/Skills'
 import AboutSection from '../components/AboutSection'
-import Link from 'next/link'
 import FloatingDots from '../components/FloatingDots'
 
 export default function Home() {
