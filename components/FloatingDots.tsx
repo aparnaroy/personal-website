@@ -51,30 +51,23 @@ const FloatingDots = () => {
     const windowSize = window.innerWidth
     let dots: DotsConfig
 
-    if (windowSize > 1600) {
+    if (windowSize > 1300) {
       dots = {
-        nb: 100,
+        nb: 250,
         distance: 0,
         d_radius: 0,
         array: [],
       }
-    } else if (windowSize > 1300) {
+    } else if (windowSize > 1000) {
       dots = {
-        nb: 75,
-        distance: 0,
-        d_radius: 0,
-        array: [],
-      }
-    } else if (windowSize > 1100) {
-      dots = {
-        nb: 50,
+        nb: 200,
         distance: 0,
         d_radius: 0,
         array: [],
       }
     } else {
       dots = {
-        nb: 25,
+        nb: 170,
         distance: 0,
         d_radius: 0,
         array: [],
@@ -91,7 +84,7 @@ const FloatingDots = () => {
       // First dot to be relatively large and blue
       dots.array[0].radius = 1.5
       dots.array[0].colour = 'rgb(22, 189, 222)' // primary blue
-      dots.array[0].opacity = 0.6 // Match the maximum opacity
+      dots.array[0].opacity = 0.4 // Match the maximum opacity
     }
 
     function Dot(this: Dot) {
@@ -100,9 +93,9 @@ const FloatingDots = () => {
       this.y = Math.random() * canvas.height
       this.vx = (-0.5 + Math.random()) * 0.5
       this.vy = (-0.5 + Math.random()) * 0.5
-      this.radius = Math.random() * 2 + 0.7
+      this.radius = Math.random() * 2 + 0.8
       this.colour = colorDot[Math.floor(Math.random() * colorDot.length)]
-      this.opacity = 0.2 + Math.random() * 0.3 // Random opacity between 0.2 and 0.6
+      this.opacity = 0.2 + Math.random() * 0.1 // Random opacity between 0.2 and 0.6
     }
 
     Dot.prototype = {

@@ -117,7 +117,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === 'loading'}
-        className="btn btn-primary w-full flex items-center justify-center"
+        className="btn btn-primary w-full flex items-center justify-center h-11"
       >
         {status === 'loading' ? (
           'Sending...'
