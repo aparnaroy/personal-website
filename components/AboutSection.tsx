@@ -302,15 +302,19 @@ export default function AboutSection() {
   return (
     <section id="about" className="py-20 bg-gray-100 dark:bg-dark-lighter">
       <div className="container mx-auto px-4">
-        <motion.h2 
-          className="section-title"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          About Me
-        </motion.h2>
+        <div className="text-center">
+            <motion.h2 
+              className="section-title relative inline-block"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              About Me
+              <span className="absolute -bottom-2 left-0 w-full h-1.5 bg-gradient-to-r from-transparent via-[#16bdde] to-transparent opacity-85"></span>
+            </motion.h2>
+        </div>
+        <div className="h-3"></div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-0">
           {activeTab === 0 ? (
             <motion.div 

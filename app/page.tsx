@@ -119,35 +119,43 @@ export default function Home() {
       <AboutSection />
 
       {/* Skills Section */}
-      <section id="skills" className="py-20">
+      <section id="skills" className="py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-4xl font-bold text-center mb-6"
-          >
-            Skills
-          </motion.h2>
+        <div className="h-8"></div>
+          <div className="text-center">
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-4xl font-bold text-center mb-6 relative inline-block"
+            >
+              Skills
+              <span className="absolute -bottom-2 left-0 w-full h-1.5 bg-gradient-to-r from-transparent via-[#16bdde] to-transparent opacity-85"></span>
+            </motion.h2>
+          </div>
+          <div className="h-6"></div>
           <Skills />
         </div>
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20">
+      <section id="projects" className="pt-8 pb-20">
         <div className="container mx-auto px-8">
-          <motion.h2 
-            className="section-title"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            Projects
-          </motion.h2>
+          <div className="text-center">
+            <motion.h2 
+              className="section-title relative inline-block"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              Projects
+              <span className="absolute -bottom-2 left-0 w-full h-1.5 bg-gradient-to-r from-transparent via-[#16bdde] to-transparent opacity-85"></span>
+            </motion.h2>
+          </div>
           <motion.div 
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -220,15 +228,19 @@ export default function Home() {
       {/* Experience Section */}
       <section id="experience" className="py-20 bg-gray-100 dark:bg-dark-lighter">
         <div className="container mx-auto px-4">
-          <motion.h2 
-            className="section-title"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            Experience
-          </motion.h2>
+          <div className="text-center">
+            <motion.h2 
+              className="section-title relative inline-block"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              Experience
+              <span className="absolute -bottom-2 left-0 w-full h-1.5 bg-gradient-to-r from-transparent via-[#16bdde] to-transparent opacity-85"></span>
+            </motion.h2>
+          </div>
+          <div className="h-4"></div>
           <motion.div 
             className="relative max-w-4xl mx-auto space-y-8"
             initial={{ opacity: 0 }}
@@ -312,16 +324,20 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="py-20">
         <div className="container mx-auto px-4">
-          <motion.h2 
-            className="section-title"
-            ref={ref}
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            variants={fadeInUp}
-            transition={{ duration: 0.6 }}
-          >
-            Get in Touch
-          </motion.h2>
+          <div className="text-center">
+            <motion.h2 
+              className="section-title relative inline-block"
+              ref={ref}
+              initial="hidden"
+              animate={inView ? "visible" : "hidden"}
+              variants={fadeInUp}
+              transition={{ duration: 0.6 }}
+            >
+              Get in Touch
+              <span className="absolute -bottom-2 left-0 w-full h-1.5 bg-gradient-to-r from-transparent via-[#16bdde] to-transparent opacity-85"></span>
+            </motion.h2>
+          </div>
+          <div className="h-3"></div>
           <div className="max-w-2xl mx-auto">
             <ContactForm />
           </div>

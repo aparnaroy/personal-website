@@ -35,7 +35,7 @@ const FloatingDots = () => {
     const colorDot = [
       'rgb(22, 189, 222)', // primary blue
       'rgb(22, 189, 222)', // primary blue
-      'rgb(150, 54, 245)', // secondary purple
+    //   'rgb(150, 54, 245)', // secondary purple
       'rgb(232, 35, 137)', // accent pink
     ]
 

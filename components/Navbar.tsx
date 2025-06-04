@@ -54,15 +54,27 @@ export default function Navbar() {
                 to="about"
                 smooth={true}
                 duration={500}
+                offset={-80}
                 className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer"
                 onClick={handleNavLinkClick}
               >
                 About
               </ScrollLink>
               <ScrollLink
+                to="skills"
+                smooth={true}
+                duration={500}
+                offset={-40}
+                className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer"
+                onClick={handleNavLinkClick}
+              >
+                Skills
+              </ScrollLink>
+              <ScrollLink
                 to="projects"
                 smooth={true}
                 duration={500}
+                offset={-90}
                 className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer"
                 onClick={handleNavLinkClick}
               >
@@ -72,6 +84,7 @@ export default function Navbar() {
                 to="experience"
                 smooth={true}
                 duration={500}
+                offset={-80}
                 className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer"
                 onClick={handleNavLinkClick}
               >
@@ -81,6 +94,7 @@ export default function Navbar() {
                 to="contact"
                 smooth={true}
                 duration={500}
+                offset={-60}
                 className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer"
                 onClick={handleNavLinkClick}
               >
@@ -123,7 +137,7 @@ export default function Navbar() {
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.div
-              className="md:hidden absolute top-16 left-0 right-0 bg-white/80 dark:bg-dark/80 backdrop-blur-md shadow-lg"
+              className="md:hidden absolute top-16 left-0 right-0 bg-white/80 dark:bg-dark/80 backdrop-blur-lg shadow-lg border-t border-gray-200 dark:border-gray-800"
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 15 }}
               exit={{ opacity: 0, y: -10 }}
@@ -134,15 +148,27 @@ export default function Navbar() {
                   to="about"
                   smooth={true}
                   duration={500}
+                  offset={-80}
                   className="block text-center text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer"
                   onClick={handleNavLinkClick}
                 >
                   About
                 </ScrollLink>
                 <ScrollLink
+                  to="skills"
+                  smooth={true}
+                  duration={500}
+                  offset={-40}
+                  className="block text-center text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer"
+                  onClick={handleNavLinkClick}
+                >
+                  Skills
+                </ScrollLink>
+                <ScrollLink
                   to="projects"
                   smooth={true}
                   duration={500}
+                  offset={-90}
                   className="block text-center text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer"
                   onClick={handleNavLinkClick}
                 >
@@ -152,6 +178,7 @@ export default function Navbar() {
                   to="experience"
                   smooth={true}
                   duration={500}
+                  offset={-80}
                   className="block text-center text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer"
                   onClick={handleNavLinkClick}
                 >
@@ -161,6 +188,7 @@ export default function Navbar() {
                   to="contact"
                   smooth={true}
                   duration={500}
+                  offset={-60}
                   className="block text-center text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer"
                   onClick={handleNavLinkClick}
                 >

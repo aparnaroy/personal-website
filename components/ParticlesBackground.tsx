@@ -94,9 +94,9 @@ export default function ParticlesBackground({ className }: ParticlesBackgroundPr
             number: {
               density: {
                 enable: true,
-                area: 600,
+                area: 500,
               },
-              value: 80,
+              value: 70,
             },
             opacity: {
               value: 0.5,
