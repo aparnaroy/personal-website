@@ -206,7 +206,7 @@ export default function AboutSection() {
               <span className="w-2 h-2 bg-primary rounded-full mr-2 mt-2"></span>
               <div className="flex-1">
                 <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
-                  <p className="text-gray-600 dark:text-gray-300">Dean's List</p>
+                  <p className="text-gray-600 dark:text-gray-300">Technica 2022</p>
                 </div>
                 <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
                   1st Place
@@ -218,7 +218,7 @@ export default function AboutSection() {
               <span className="w-2 h-2 bg-primary rounded-full mr-2 mt-2"></span>
               <div className="flex-1">
                 <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
-                  <p className="text-gray-600 dark:text-gray-300">Dean's List</p>
+                  <p className="text-gray-600 dark:text-gray-300">Blah</p>
                 </div>
                 <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
                   1st Place
@@ -364,7 +364,7 @@ export default function AboutSection() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.4 }}
               >
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-0 sm:gap-3 mb-6 justify-center md:justify-start">
                   {tabs.map((tab, index) => (
                     <button
                       key={index}
@@ -404,7 +404,7 @@ export default function AboutSection() {
           ) : (
             <>
               <motion.div 
-                className="flex flex-wrap gap-2 mb-8 justify-center"
+                className="flex flex-wrap gap-0 sm:gap-3 mb-8 justify-center"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
