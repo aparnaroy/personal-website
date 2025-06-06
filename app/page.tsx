@@ -6,7 +6,6 @@ import { useInView } from 'react-intersection-observer'
 import { FiGithub, FiLinkedin, FiMail, FiSun, FiMoon } from 'react-icons/fi'
 import { useTheme } from '../components/ThemeProvider'
 import Navbar from '../components/Navbar'
-import ProjectCard from '../components/ProjectCard'
 import ExperienceCard from '../components/ExperienceCard'
 import ContactForm from '../components/ContactForm'
 import ParticlesBackground from '../components/ParticlesBackground'
@@ -15,6 +14,7 @@ import Footer from '../components/Footer'
 import Skills from '../components/Skills'
 import AboutSection from '../components/AboutSection'
 import FloatingDots from '../components/FloatingDots'
+import Projects from '@/components/Projects'
 
 export default function Home() {
   const { theme, toggleTheme } = useTheme()
@@ -121,6 +121,7 @@ export default function Home() {
       {/* Skills Section */}
       <section id="skills" className="py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* <div className="container mx-auto px-4 lg:px-14"> */}
         <div className="h-8"></div>
           <div className="text-center">
             <motion.h2
@@ -140,8 +141,9 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="pt-8 pb-20">
+      <section id="projects" className="pt-10 pb-20 mb-10">
         <div className="container mx-auto px-8">
+        {/* <div className="container mx-auto px-0 sm:px-0 lg:px-0"> */}
           <div className="text-center">
             <motion.h2 
               className="section-title relative inline-block"
@@ -154,74 +156,7 @@ export default function Home() {
               <span className="absolute -bottom-2 left-0 w-full h-1.5 bg-gradient-to-r from-transparent via-[#16bdde] to-transparent opacity-85"></span>
             </motion.h2>
           </div>
-          <motion.div 
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6 }}
-          >
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              <ProjectCard
-                title="Capital One Configuration Manager"
-                description="A web tool for managing configurations with version control, role-based permissions, and approval workflows."
-                technologies={['Java Spring Boot', 'AWS DynamoDB', 'AWS EC2', 'React', 'TypeScript']}
-                githubLink="https://github.com/aparnaroy/capital-one-config"
-                demoLink="https://capital-one-config.vercel.app"
-                imageUrl="/images/config-manager.png"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-            >
-              <ProjectCard
-                title="Care o'Clock"
-                description="A voice-assisted health app for managing doctor appointments, medications, and emergency contacts."
-                technologies={['React', 'TypeScript', 'MongoDB', 'Gemini API']}
-                githubLink="https://github.com/aparnaroy/Care-o-Clock"
-                demoLink="https://care-oclock.vercel.app"
-                imageUrl="/images/care-o-clock.png"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-            >
-              <ProjectCard
-                title="Aroma"
-                description="A recipe-keeping app with user authentication, recipe imports, grocery lists, and meal planning."
-                technologies={['MongoDB', 'Angular', 'Node.js', 'Express', 'OpenAI API']}
-                githubLink="https://github.com/aparnaroy/Aroma"
-                demoLink="https://aroma-app.vercel.app"
-                imageUrl="/images/aroma.png"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-            >
-              <ProjectCard
-                title="Talk to the Hand"
-                description="A website bridging the gap between hearing and signing communities with live ASL translation."
-                technologies={['React', 'TypeScript', 'HTML/CSS']}
-                githubLink="https://github.com/aparnaroy/TalkToTheHand"
-                demoLink="https://talk-to-the-hand.vercel.app"
-                imageUrl="/images/talk-to-the-hand.png"
-              />
-            </motion.div>
-          </motion.div>
+          <Projects />
         </div>
       </section>
 

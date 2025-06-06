@@ -58,54 +58,65 @@ export default function ProjectCard({
   imageUrl,
 }: ProjectCardProps) {
   return (
-    <motion.div
-      className="card group h-[600px] flex flex-col p-5 rounded-lg overflow-hidden"
-      whileHover={{ y: -10 }}
-      transition={{ duration: 0.01 }}
+    <motion.div 
+      className="group relative w-[350px] h-[285px] mt-2 rounded-lg overflow-hidden shadow-[0_0_13px_rgba(0,0,0,0.2)] flex flex-col"
+      whileHover={{ scale: 1.03 }}
+      transition={{ duration: 0.3 }}
     >
-      <div className="relative w-full h-[341px] mb-5 rounded-md overflow-hidden">
+      {/* Image */}
+      <div className="relative w-full h-[200px]">
         <Image
           src={imageUrl}
           alt={title}
           layout="fill"
           className="object-cover"
         />
-      </div>
-      <h3 className="text-xl font-bold mb-3">{title}</h3>
-      <div className="flex flex-wrap gap-1.5 mb-3">
-        {technologies.map((tech, index) => (
-          <span
-            key={index}
-            className={`px-1.5 py-1 text-xs rounded-full ${getTechColor(tech)}`}
-          >
-            {tech}
-          </span>
-        ))}
-      </div>
-      <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">{description}</p>
 
-      <div className="flex space-x-6 mt-auto">
-        <a
-          href={githubLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center text-gray-600 dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors"
-        >
-          <FiGithub className="mr-2" />
-          GitHub
-        </a>
-        {demoLink !== '#' && (
-          <a
-            href={demoLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
-          >
-            <FiExternalLink className="mr-2" />
-            Live Demo
-          </a>
-        )}
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+          <div className="p-4 w-full translate-y-10 group-hover:translate-y-0 transition-transform duration-300">
+            <p className="text-[14px] text-white mb-3">{description}</p>
+            <div className="flex space-x-4">
+              <a
+                href={githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center text-white hover:text-[#16bdde] text-[15.5px]"
+              >
+                <FiGithub className="mr-1" />
+                GitHub
+              </a>
+              {demoLink !== '#' && (
+                <a
+                  href={demoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-white hover:text-primary text-[15.5px]"
+                >
+                  <FiExternalLink className="mr-1" />
+                  Live Demo
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Text below image */}
+      <div className="pl-4 pr-4 pt-3 bg-white dark:bg-neutral-900 flex-1">
+        <h3 className="text-lg font-semibold truncate">{title}</h3>
+        <div className="flex flex-wrap gap-1 mt-2">
+          {technologies.map((tech, index) => (
+            <span
+              key={index}
+              className={`px-1.5 py-0.5 text-[9.5px] rounded-full ${getTechColor(tech)}`}
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
       </div>
     </motion.div>
+
   )
 } 
