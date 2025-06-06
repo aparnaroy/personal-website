@@ -37,7 +37,7 @@ const projects = [
   },
   {
     title: "Step to the Beat",
-    description: "A website bridging the gap between hearing and signing communities with live ASL translation.",
+    description: "A fun take on listening to music while exercising! This mobile app detects your pace and instantly generates playlists to match your speed and preferred genre. Includes a playful UI and seamless Spotify integration.",
     technologies: ['React', 'TypeScript', 'HTML/CSS'],
     githubLink: "https://github.com/aparnaroy/TalkToTheHand",
     demoLink: "https://talk-to-the-hand.vercel.app",
@@ -45,7 +45,7 @@ const projects = [
   },
   {
     title: "Doodle",
-    description: "A website bridging the gap between hearing and signing communities with live ASL translation.",
+    description: "A lightweight drawing app featuring custom brush sizes, color and opacity controls, an eraser, and doodle saving. Focused on intuitive UI and smooth drawing experience.",
     technologies: ['React', 'TypeScript', 'HTML/CSS'],
     githubLink: "https://github.com/aparnaroy/TalkToTheHand",
     demoLink: "https://talk-to-the-hand.vercel.app",
@@ -69,7 +69,7 @@ const projects = [
   },
   {
     title: "Mama's Freezeria",
-    description: "A website bridging the gap between hearing and signing communities with live ASL translation.",
+    description: "A fresh take on Papa's Freezeria from CoolMathGames. A timed milkshake-making game where players race against the clock to drag and mix ingredients, tackling increasingly complex orders as the game progresses.",
     technologies: ['React', 'TypeScript', 'HTML/CSS'],
     githubLink: "https://github.com/aparnaroy/TalkToTheHand",
     demoLink: "https://talk-to-the-hand.vercel.app",
@@ -77,15 +77,15 @@ const projects = [
   },
   {
     title: "Planet Garden",
-    description: "An e-commerce site bridging the gap between hearing and signing communities with live ASL translation.",
+    description: "An e-commerce site for landscaping and gardening products. Features 3 levels of permissions: users can shop and make changes to their cart, admins can manage/edit products, and the CEO can manage the available inventory and all users.",
     technologies: ['React', 'TypeScript', 'HTML/CSS'],
     githubLink: "https://github.com/aparnaroy/TalkToTheHand",
     demoLink: "https://talk-to-the-hand.vercel.app",
     imageUrl: "/images/talk-to-the-hand.png"
   },
   {
-    title: "Go Local",
-    description: "A website bridging the gap between hearing and signing communities with live ASL translation.",
+    title: "GoLocal",
+    description: "Developed in the HenHacks 2023 hackathon, this website facilitates communication between small Delaware businesses and their communities, promoting a culture of belonging and supporting local businesses. Includes a chatbot for quick customer support.",
     technologies: ['React', 'TypeScript', 'HTML/CSS'],
     githubLink: "https://github.com/aparnaroy/TalkToTheHand",
     demoLink: "https://talk-to-the-hand.vercel.app",
@@ -93,15 +93,15 @@ const projects = [
   },
   {
     title: "Binary Clock",
-    description: "A website bridging the gap between hearing and signing communities with live ASL translation.",
-    technologies: ['React', 'TypeScript', 'HTML/CSS'],
+    description: "A program that displays a clock with time values represented in binary using shell scripts. Toggles between 24-hour and 12-hour displays when given OS signals.",
+    technologies: ['React', 'TypeScript', 'HTML/CSS', 'Unix'],
     githubLink: "https://github.com/aparnaroy/TalkToTheHand",
     demoLink: "https://talk-to-the-hand.vercel.app",
     imageUrl: "/images/talk-to-the-hand.png"
   },
   {
     title: "Desh",
-    description: "A website bridging the gap between hearing and signing communities with live ASL translation.",
+    description: "A custom shell that replicates core terminal functionality, supporting both built-in and external commands. Runs interactively by default or executes a script file if provided.",
     technologies: ['React', 'TypeScript', 'HTML/CSS'],
     githubLink: "https://github.com/aparnaroy/TalkToTheHand",
     demoLink: "https://talk-to-the-hand.vercel.app",
