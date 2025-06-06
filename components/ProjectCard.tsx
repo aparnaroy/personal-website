@@ -75,13 +75,13 @@ export default function ProjectCard({
         {/* Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
           <div className="p-4 w-full translate-y-10 group-hover:translate-y-0 transition-transform duration-300">
-            <p className="text-[14px] text-white mb-3">{description}</p>
-            <div className="flex space-x-4">
+            <p className="text-[13.5px] text-white mb-2.5">{description}</p>
+            <div className="flex space-x-4 mb-1">
               <a
                 href={githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-white hover:text-[#c181fc] text-[15.5px]"
+                className="flex items-center text-white font-semibold hover:text-[#c181fc] text-[15px] transition-all duration-200"
               >
                 <FiGithub className="mr-1" />
                 GitHub
@@ -91,7 +91,7 @@ export default function ProjectCard({
                   href={demoLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center text-white hover:text-primary text-[15.5px]"
+                  className="flex items-center text-white font-semibold hover:text-primary text-[15px] transition-all duration-200"
                 >
                   <FiExternalLink className="mr-1" />
                   Live Demo
@@ -105,11 +105,11 @@ export default function ProjectCard({
       {/* Text below image */}
       <div className="pl-4 pr-4 pt-3 bg-white dark:bg-dark-lighter flex-1">
         <h3 className="text-lg font-semibold truncate">{title}</h3>
-        <div className="flex flex-wrap gap-1 mt-2">
+        <div className="flex flex-wrap gap-1 mt-2 mb-5">
           {technologies.map((tech, index) => (
             <span
               key={index}
-              className={`px-1.5 py-0.5 text-[9.5px] rounded-full ${getTechColor(tech)}`}
+              className={`px-1.5 py-0.5 text-[10.5px] rounded-full ${getTechColor(tech)}`}
             >
               {tech}
             </span>

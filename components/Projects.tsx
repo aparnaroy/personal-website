@@ -1,12 +1,11 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import ProjectCard from './ProjectCard'; // adjust path as needed
+import ProjectCard from './ProjectCard';
 
 const projects = [
   {
     title: "Capital One Configuration Manager",
-    description: "A web tool for managing configurations with version control, role-based permissions, and approval workflows.",
+    description: "A web tool developed for Capital One enabling users to manage configurations with version control, role-based permissions for user groups, and status/approval workflows.",
     technologies: ['Java Spring Boot', 'AWS DynamoDB + EC2', 'React', 'TypeScript'],
     githubLink: "https://github.com/aparnaroy/capital-one-config",
     demoLink: "https://capital-one-config.vercel.app",
@@ -14,7 +13,7 @@ const projects = [
   },
   {
     title: "Care o'Clock",
-    description: "A voice-assisted health app for managing doctor appointments, medications, and emergency contacts.",
+    description: "An all-in-one health app that helps users track doctor appointments, set medication reminders, get personalized health information, manage daily tasks, and call emergency contacts—all by simply speaking to it.",
     technologies: ['React', 'TypeScript', 'MongoDB', 'Gemini API'],
     githubLink: "https://github.com/aparnaroy/Care-o-Clock",
     demoLink: "https://care-oclock.vercel.app",
@@ -22,7 +21,7 @@ const projects = [
   },
   {
     title: "Aroma",
-    description: "A recipe-keeping app with user authentication, recipe imports, grocery lists, and meal planning.",
+    description: "A personal recipe buddy that helps users save or instantly import recipes, generate tailored recipes with AI, plan meals for the week, and automatically create grocery lists based on their meal plan.",
     technologies: ['MongoDB', 'Angular', 'Node.js', 'Express', 'OpenAI API'],
     githubLink: "https://github.com/aparnaroy/Aroma",
     demoLink: "https://aroma-app.vercel.app",
@@ -30,6 +29,14 @@ const projects = [
   },
   {
     title: "Talk to the Hand",
+    description: "1st place winner at HenHacks 2024! A website dedicated to bridging the gap between hearing and signing communities. Features live ASL translation from text or speech and an ASL learning hub.",
+    technologies: ['React', 'TypeScript', 'HTML/CSS'],
+    githubLink: "https://github.com/aparnaroy/TalkToTheHand",
+    demoLink: "https://talk-to-the-hand.vercel.app",
+    imageUrl: "/images/talk-to-the-hand.png"
+  },
+  {
+    title: "Step to the Beat",
     description: "A website bridging the gap between hearing and signing communities with live ASL translation.",
     technologies: ['React', 'TypeScript', 'HTML/CSS'],
     githubLink: "https://github.com/aparnaroy/TalkToTheHand",
@@ -37,31 +44,63 @@ const projects = [
     imageUrl: "/images/talk-to-the-hand.png"
   },
   {
-    title: "Capital One Configuration Manager 1",
-    description: "A web tool for managing configurations with version control, role-based permissions, and approval workflows.",
-    technologies: ['AWS DynamoDB', 'AWS EC2', 'React', 'TypeScript'],
-    githubLink: "https://github.com/aparnaroy/capital-one-config",
-    demoLink: "https://capital-one-config.vercel.app",
-    imageUrl: "/images/yuh.png"
+    title: "Doodle",
+    description: "A website bridging the gap between hearing and signing communities with live ASL translation.",
+    technologies: ['React', 'TypeScript', 'HTML/CSS'],
+    githubLink: "https://github.com/aparnaroy/TalkToTheHand",
+    demoLink: "https://talk-to-the-hand.vercel.app",
+    imageUrl: "/images/talk-to-the-hand.png"
   },
   {
-    title: "Care o'Clock 1",
-    description: "A voice-assisted health app for managing doctor appointments, medications, and emergency contacts.",
-    technologies: ['React', 'TypeScript', 'MongoDB', 'Gemini API'],
-    githubLink: "https://github.com/aparnaroy/Care-o-Clock",
-    demoLink: "https://care-oclock.vercel.app",
-    imageUrl: "/images/care-o-clock.png"
+    title: "Taskly",
+    description: "A to-do list app developed in 3 different versions/stacks, each featuring user authentication, data storage, and secure hosting: 1) Firebase, 2) Flask/MySQL, and 3) MongoDB/Node.js/Express on AWS EC2.",
+    technologies: ['Firebase', 'Flask', 'MySQL', 'MongoDB', 'Node.js', 'Express', 'AWS EC2', 'JavaScript', 'HTML/CSS'],
+    githubLink: "https://github.com/aparnaroy/TalkToTheHand",
+    demoLink: "https://talk-to-the-hand.vercel.app",
+    imageUrl: "/images/talk-to-the-hand.png"
   },
   {
-    title: "Aroma 1",
-    description: "A recipe-keeping app with user authentication, recipe imports, grocery lists, and meal planning.",
-    technologies: ['MongoDB', 'Angular', 'Node.js', 'Express', 'OpenAI API'],
-    githubLink: "https://github.com/aparnaroy/Aroma",
-    demoLink: "https://aroma-app.vercel.app",
-    imageUrl: "/images/aroma.png"
+    title: "StackPack Journey",
+    description: "A puzzle platform game that guides players to mastering stack manipulation. Equipped with a StackPack, players must strategically collect (push) and use (pop) items scattered throughout the world to overcome obstacles and ultimately reunite with their lost soulmate.",
+    technologies: ['React', 'TypeScript', 'Phaser'],
+    githubLink: "https://github.com/aparnaroy/TalkToTheHand",
+    demoLink: "https://talk-to-the-hand.vercel.app",
+    imageUrl: "/images/talk-to-the-hand.png"
   },
   {
-    title: "Talk to the Hand 1",
+    title: "Mama's Freezeria",
+    description: "A website bridging the gap between hearing and signing communities with live ASL translation.",
+    technologies: ['React', 'TypeScript', 'HTML/CSS'],
+    githubLink: "https://github.com/aparnaroy/TalkToTheHand",
+    demoLink: "https://talk-to-the-hand.vercel.app",
+    imageUrl: "/images/talk-to-the-hand.png"
+  },
+  {
+    title: "Planet Garden",
+    description: "An e-commerce site bridging the gap between hearing and signing communities with live ASL translation.",
+    technologies: ['React', 'TypeScript', 'HTML/CSS'],
+    githubLink: "https://github.com/aparnaroy/TalkToTheHand",
+    demoLink: "https://talk-to-the-hand.vercel.app",
+    imageUrl: "/images/talk-to-the-hand.png"
+  },
+  {
+    title: "Go Local",
+    description: "A website bridging the gap between hearing and signing communities with live ASL translation.",
+    technologies: ['React', 'TypeScript', 'HTML/CSS'],
+    githubLink: "https://github.com/aparnaroy/TalkToTheHand",
+    demoLink: "https://talk-to-the-hand.vercel.app",
+    imageUrl: "/images/talk-to-the-hand.png"
+  },
+  {
+    title: "Binary Clock",
+    description: "A website bridging the gap between hearing and signing communities with live ASL translation.",
+    technologies: ['React', 'TypeScript', 'HTML/CSS'],
+    githubLink: "https://github.com/aparnaroy/TalkToTheHand",
+    demoLink: "https://talk-to-the-hand.vercel.app",
+    imageUrl: "/images/talk-to-the-hand.png"
+  },
+  {
+    title: "Desh",
     description: "A website bridging the gap between hearing and signing communities with live ASL translation.",
     technologies: ['React', 'TypeScript', 'HTML/CSS'],
     githubLink: "https://github.com/aparnaroy/TalkToTheHand",
@@ -78,9 +117,9 @@ export default function Projects() {
   return (
     <div className="relative">
       {/* Top row - scrolls right */}
-      <div className="flex overflow-x-hidden overflow-y-visible mt-0 pt-3 pb-4 mb-0 scrollbar-hide">
+      <div className="flex overflow-x-auto overflow-y-visible mt-0 pt-3 pb-4 mb-0 scrollbar-hide">
         <div className="flex space-x-8 animate-scroll-right w-max">
-          {[...topProjects, ...topProjects].map((project, index) => (
+          {[...topProjects, ...topProjects, ...topProjects, ...topProjects, ...topProjects, ...topProjects].map((project, index) => (
             <div className="flex-none w-[350px]">
               <ProjectCard {...project} />
             </div>
@@ -89,9 +128,9 @@ export default function Projects() {
       </div>
 
       {/* Bottom row - scrolls left */}
-      <div className="flex overflow-x-hidden pb-8 pt-2 scrollbar-hide">
+      <div className="flex overflow-x-auto pb-8 pt-2 scrollbar-hide">
         <div className="flex space-x-8 animate-scroll-left w-max">
-          {[...bottomProjects, ...bottomProjects].map((project, index) => (
+          {[...bottomProjects, ...bottomProjects, ...bottomProjects, ...bottomProjects, ...bottomProjects, ...bottomProjects].map((project, index) => (
             <div className="flex-none w-[350px]">
               <ProjectCard {...project} />
             </div>
