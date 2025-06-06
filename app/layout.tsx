@@ -3,7 +3,6 @@ import type { Metadata } from 'next'
 import { Inter, Pacifico } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '../components/ThemeProvider'
-import ParticlesBackground from '../components/ParticlesBackground'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const pacifico = Pacifico({ 

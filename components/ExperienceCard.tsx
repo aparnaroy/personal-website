@@ -70,7 +70,7 @@ export default function ExperienceCard({
           {skills.map((skill, index) => (
             <span
               key={index}
-              className="px-2 py-1 text-xs md:text-sm bg-primary/10 text-primary rounded-full"
+              className="px-2 py-1 text-xs md:text-[13px] bg-primary/10 text-primary rounded-full"
             >
               {skill}
             </span>
