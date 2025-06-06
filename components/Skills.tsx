@@ -134,7 +134,7 @@ export default function Skills() {
             whileInView={{ opacity: 1, y: 0, boxShadow: '0 1px 20px rgba(0, 0, 0, 0.2)' }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: index * 0.1 }}
-            className="relative bg-white dark:bg-dark-lighter p-6 rounded-lg shadow-lg"
+            className="relative bg-white dark:bg-dark-lighter p-6 rounded-lg shadow-lg pl-4 pr-4"
             // style={{
             //   border: '3px solid transparent',
             //   borderImage: 'linear-gradient(to bottom right, #e82389, #8623e8, #23c7e8) 1',
@@ -148,7 +148,7 @@ export default function Skills() {
                 <motion.div
                   key={skill.name}
                   whileHover={{ y: -5 }}
-                  className="flex items-center gap-2 px-3 py-1.5 bg-gray-50 dark:bg-dark rounded-full select-none"
+                  className="flex items-center gap-1 px-3 py-1.5 bg-gray-50 dark:bg-dark rounded-full select-none"
                 >
                   <div style={{ color: skill.color }} className="text-xl">
                     {skill.icon}
