@@ -73,7 +73,7 @@ export default function ProjectCard({
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+        <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
           <div className="p-4 w-full translate-y-10 group-hover:translate-y-0 transition-transform duration-300">
             <p className="text-[14px] text-white mb-3">{description}</p>
             <div className="flex space-x-4">
@@ -81,7 +81,7 @@ export default function ProjectCard({
                 href={githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-white hover:text-[#16bdde] text-[15.5px]"
+                className="flex items-center text-white hover:text-[#c181fc] text-[15.5px]"
               >
                 <FiGithub className="mr-1" />
                 GitHub
@@ -103,7 +103,7 @@ export default function ProjectCard({
       </div>
 
       {/* Text below image */}
-      <div className="pl-4 pr-4 pt-3 bg-white dark:bg-neutral-900 flex-1">
+      <div className="pl-4 pr-4 pt-3 bg-white dark:bg-dark-lighter flex-1">
         <h3 className="text-lg font-semibold truncate">{title}</h3>
         <div className="flex flex-wrap gap-1 mt-2">
           {technologies.map((tech, index) => (
