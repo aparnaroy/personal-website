@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FiGithub, FiExternalLink } from 'react-icons/fi'
+import { FiGithub, FiExternalLink, FiVideo } from 'react-icons/fi'
 import Image from 'next/image'
 
 // Color mapping for different technology categories
@@ -21,7 +21,7 @@ export const getTechColor = (tech: string) => {
   }
   
   // Database technologies
-  if (techLower.includes('sql') || techLower.includes('mongo') || techLower.includes('postgres')) {
+  if (techLower.includes('sql') || techLower.includes('mongo') || techLower.includes('postgres') || techLower.includes('firebase')) {
     return 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-100'
   }
   
@@ -44,17 +44,20 @@ interface ProjectCardProps {
   title: string
   description: string
   technologies: string[]
-  githubLink: string
-  demoLink: string
+  githubLink?: string
+  liveLink?: string
+  videoLink?: string
   imageUrl: string
 }
+
 
 export default function ProjectCard({
   title,
   description,
   technologies,
   githubLink,
-  demoLink,
+  liveLink,
+  videoLink,
   imageUrl,
 }: ProjectCardProps) {
   return (
@@ -77,27 +80,43 @@ export default function ProjectCard({
           <div className="p-4 w-full translate-y-10 group-hover:translate-y-0 transition-transform duration-300">
             <p className="text-[13.5px] text-white mb-2.5">{description}</p>
             <div className="flex space-x-4 mb-0">
-              <a
-                href={githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center text-white font-bold hover:text-[#c181fc] text-[15.5px] transition-all duration-200"
-              >
-                <FiGithub className="mr-1" />
-                GitHub
-              </a>
-              {demoLink !== '#' && (
+              {githubLink && (
                 <a
-                  href={demoLink}
+                  href={githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-white font-bold hover:text-[#c181fc] text-[15.5px] transition-all duration-200"
+                >
+                  <FiGithub className="mr-1" />
+                  GitHub
+                </a>
+              )}
+              
+              {liveLink && (
+                <a
+                  href={liveLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center text-white font-bold hover:text-primary text-[15.5px] transition-all duration-200"
                 >
                   <FiExternalLink className="mr-1" />
-                  Live Demo
+                  Live Site
+                </a>
+              )}
+
+              {videoLink && (
+                <a
+                  href={videoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-white font-bold hover:text-[#ff63b4] text-[15.5px] transition-all duration-200"
+                >
+                  <FiVideo className="mr-1.5" />
+                  Demo Video
                 </a>
               )}
             </div>
+
           </div>
         </div>
       </div>
