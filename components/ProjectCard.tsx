@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FiGithub, FiExternalLink, FiVideo } from 'react-icons/fi'
+import { FiGithub, FiExternalLink, FiVideo, FiMonitor } from 'react-icons/fi'
 import Image from 'next/image'
 
 // Color mapping for different technology categories
@@ -47,6 +47,7 @@ interface ProjectCardProps {
   githubLink?: string
   liveLink?: string
   videoLink?: string
+  slidesLink?: string
   imageUrl: string
 }
 
@@ -58,16 +59,17 @@ export default function ProjectCard({
   githubLink,
   liveLink,
   videoLink,
+  slidesLink,
   imageUrl,
 }: ProjectCardProps) {
   return (
     <motion.div 
-      className="group relative w-[350px] h-[285px] mt-2 rounded-lg overflow-hidden shadow-[0_0_13px_rgba(0,0,0,0.2)] flex flex-col"
+      className="group relative w-[350px] h-[300px] mt-2 rounded-lg overflow-hidden shadow-[0_0_10px_rgba(0,0,0,0.23)] flex flex-col"
       whileHover={{ scale: 1.03 }}
       transition={{ duration: 0.3 }}
     >
       {/* Image */}
-      <div className="relative w-full h-[200px]">
+      <div className="relative w-full h-[215px] group/image overflow-hidden">
         <Image
           src={imageUrl}
           alt={title}
@@ -76,8 +78,8 @@ export default function ProjectCard({
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-          <div className="p-4 w-full translate-y-10 group-hover:translate-y-0 transition-transform duration-300">
+        <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 flex items-end">
+          <div className="p-4 w-full translate-y-10 group-hover/image:translate-y-0 transition-transform duration-300">
             <p className="text-[13.5px] text-white mb-2.5">{description}</p>
             <div className="flex space-x-4 mb-0">
               {githubLink && (
@@ -91,7 +93,6 @@ export default function ProjectCard({
                   GitHub
                 </a>
               )}
-              
               {liveLink && (
                 <a
                   href={liveLink}
@@ -103,7 +104,6 @@ export default function ProjectCard({
                   Live Site
                 </a>
               )}
-
               {videoLink && (
                 <a
                   href={videoLink}
@@ -115,14 +115,24 @@ export default function ProjectCard({
                   Demo Video
                 </a>
               )}
+              {slidesLink && (
+                <a
+                  href={slidesLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-white font-bold hover:text-[#ff63b4] text-[15.5px] transition-all duration-200"
+                >
+                  <FiMonitor className="mr-1.5" />
+                  Presentation
+                </a>
+              )}
             </div>
-
           </div>
         </div>
       </div>
 
       {/* Text below image */}
-      <div className="pl-4 pr-4 pt-3 bg-white dark:bg-dark-lighter flex-1">
+      <div className="pl-4 pr-4 pt-3 bg-white dark:bg-dark-lighter flex-1 border-t border-gray-200 dark:border-gray-800">
         <h3 className="text-lg font-semibold truncate">{title}</h3>
         <div className="flex flex-wrap gap-1 mt-2 mb-5">
           {technologies.map((tech, index) => (

@@ -7,16 +7,16 @@ const projects = [
     title: "Capital One Configuration Manager",
     description: "A web tool developed for Capital One enabling users to manage configurations with version control, role-based permissions for user groups, and status/approval workflows.",
     technologies: ['Java', 'Spring Boot', 'AWS DynamoDB', 'AWS EC2', 'React', 'TypeScript', 'HTML/CSS'],
-    githubLink: "https://github.com/aparnaroy/capital-one-config",
-    videoLink: "https://capital-one-config.vercel.app",
-    imageUrl: "/images/yuh.png"
+    videoLink: "https://drive.google.com/file/d/1OXA6QFJDji1krYU02BBpknGINZUG1a9-/view?usp=sharing",
+    slidesLink: "https://docs.google.com/presentation/d/1sKrMTB52ngP9X5mUMVpc3e8BrSgj5WnZjdV3A22qN5w/edit?usp=sharing",
+    imageUrl: "/images/config-manager.png"
   },
   {
     title: "Care o'Clock",
     description: "2nd place winner at HenHacks 2025! An all-in-one health app that helps users track doctor appointments, set medication reminders, get personalized health information, manage daily tasks, and call emergency contacts—all by simply speaking to it.",
     technologies: ['React', 'TypeScript', 'MongoDB', 'Gemini API'],
     githubLink: "https://github.com/aparnaroy/Care-o-Clock",
-    liveLink: "https://care-oclock.vercel.app",
+    liveLink: "https://care-o-clock.up.railway.app",
     imageUrl: "/images/care-o-clock.png"
   },
   {
@@ -24,7 +24,7 @@ const projects = [
     description: "A personal recipe buddy that helps users save or instantly import recipes, generate tailored recipes with AI, plan meals for the week, and automatically create grocery lists based on their meal plan.",
     technologies: ['MongoDB', 'Angular', 'Node.js', 'Express', 'OpenAI API'],
     githubLink: "https://github.com/aparnaroy/Aroma",
-    liveLink: "https://aroma-app.vercel.app",
+    videoLink: "https://youtu.be/0A_lot3VZRs",
     imageUrl: "/images/aroma.png"
   },
   {
@@ -117,7 +117,7 @@ export default function Projects() {
   return (
     <div className="relative">
       {/* Top row - scrolls right */}
-      <div className="flex overflow-x-auto overflow-y-visible mt-0 pt-3 pb-4 mb-0 scrollbar-hide">
+      <div className="flex overflow-x-auto overflow-y-visible mt-0 pt-3 pb-3 mb-0 scrollbar-hide">
         <div className="flex space-x-8 animate-scroll-right w-max">
           {[...topProjects, ...topProjects, ...topProjects, ...topProjects, ...topProjects, ...topProjects].map((project, index) => (
             <div className="flex-none w-[350px]">
