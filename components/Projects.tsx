@@ -9,19 +9,19 @@ const projects = [
     technologies: ['Java', 'Spring Boot', 'AWS DynamoDB', 'AWS EC2', 'React', 'TypeScript', 'HTML/CSS'],
     videoLink: "https://drive.google.com/file/d/1OXA6QFJDji1krYU02BBpknGINZUG1a9-/view?usp=sharing",
     slidesLink: "https://docs.google.com/presentation/d/1sKrMTB52ngP9X5mUMVpc3e8BrSgj5WnZjdV3A22qN5w/edit?usp=sharing",
-    imageUrl: "/images/r.png"
+    imageUrl: "/images/config-manager.png"
   },
   {
     title: "Care o'Clock",
     description: "2nd place winner at HenHacks 2025! An all-in-one health app that helps users track doctor appointments, set medication reminders, get personalized health information, manage daily tasks, and call emergency contacts—all by simply speaking to it.",
-    technologies: ['React', 'TypeScript', 'MongoDB', 'Gemini API'],
+    technologies: ['React', 'TypeScript', 'MongoDB', 'Gemini API', 'Bootstrap'],
     githubLink: "https://github.com/aparnaroy/Care-o-Clock",
     liveLink: "https://care-o-clock.up.railway.app",
     imageUrl: "/images/care-o-clock.png"
   },
   {
     title: "Aroma",
-    description: "A personal recipe buddy that helps users save or instantly import recipes, generate tailored recipes with AI, plan meals for the week, and automatically create grocery lists based on their meal plan.",
+    description: "A personal recipe buddy that helps users save and instantly import recipes, generate tailored recipes with AI, plan meals for the week, and automatically create grocery lists based on their meal plan.",
     technologies: ['MongoDB', 'Angular', 'Node.js', 'Express', 'OpenAI API'],
     githubLink: "https://github.com/aparnaroy/Aroma",
     videoLink: "https://youtu.be/0A_lot3VZRs",
@@ -30,26 +30,27 @@ const projects = [
   {
     title: "Talk to the Hand",
     description: "1st place winner at HenHacks 2024! A website dedicated to bridging the gap between hearing and signing communities. Features live ASL translation from text or speech and an ASL learning hub.",
-    technologies: ['React', 'TypeScript', 'HTML/CSS'],
+    technologies: ['React', 'TypeScript', 'Chakra UI', 'HTML/CSS'],
     githubLink: "https://github.com/aparnaroy/TalkToTheHand",
-    liveLink: "https://talk-to-the-hand.vercel.app",
+    liveLink: "https://beniabra.github.io/TalkToTheHand",
+    videoLink: "https://youtu.be/x2z2PumxJbA",
     imageUrl: "/images/talk-to-the-hand.png"
   },
   {
     title: "Step to the Beat",
     description: "A fun take on listening to music while exercising! This mobile app detects your pace and instantly generates playlists to match your speed and preferred genre. Includes a playful UI and seamless Spotify integration.",
-    technologies: ['React', 'TypeScript', 'HTML/CSS'],
-    githubLink: "https://github.com/aparnaroy/TalkToTheHand",
-    liveLink: "https://talk-to-the-hand.vercel.app",
-    imageUrl: "/images/talk-to-the-hand.png"
+    technologies: ['Java', 'Android Studio', 'XML', 'Spotify JDK'],
+    githubLink: "https://github.com/aparnaroy/StepToTheBeat",
+    videoLink: "https://youtu.be/TxoPalUzPjY",
+    imageUrl: "/images/step-to-the-beat.png"
   },
   {
     title: "Doodle",
     description: "A drawing app featuring custom brush sizes, color and opacity controls, an eraser, and doodle saving. Focused on intuitive UI and smooth drawing experience.",
     technologies: ['React', 'TypeScript', 'HTML/CSS'],
-    githubLink: "https://github.com/aparnaroy/TalkToTheHand",
-    liveLink: "https://talk-to-the-hand.vercel.app",
-    imageUrl: "/images/talk-to-the-hand.png"
+    githubLink: "https://github.com/aparnaroy/Doodle",
+    videoLink: "https://youtu.be/OoudZc0LD0w",
+    imageUrl: "/images/doodle.png"
   },
   {
     title: "Taskly",

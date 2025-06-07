@@ -32,7 +32,7 @@ export const getTechColor = (tech: string) => {
   
   // AI/ML technologies
   if (techLower.includes('ai') || techLower.includes('ml') || techLower.includes('tensorflow') ||
-      techLower.includes('gemini') || techLower.includes('openai')) {
+      techLower.includes('gemini') || techLower.includes('openai') || techLower.includes('jdk')) {
     return 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-100'
   }
   
