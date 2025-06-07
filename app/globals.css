@@ -67,13 +67,13 @@ body {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-350px * 7 - 2rem * 7)); /* card width * number of cards + gap * number of gaps */
+    transform: translateX(calc(-380px * 7 - 2rem * 7)); /* card width * number of cards + gap * number of gaps */
   }
 }
 
 @keyframes scroll-left {
   0% {
-    transform: translateX(calc(-350px * 6 - 2rem * 6));
+    transform: translateX(calc(-380px * 6 - 2rem * 6));
   }
   100% {
     transform: translateX(0);

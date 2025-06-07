@@ -9,7 +9,7 @@ const projects = [
     technologies: ['Java', 'Spring Boot', 'AWS DynamoDB', 'AWS EC2', 'React', 'TypeScript', 'HTML/CSS'],
     videoLink: "https://drive.google.com/file/d/1OXA6QFJDji1krYU02BBpknGINZUG1a9-/view?usp=sharing",
     slidesLink: "https://docs.google.com/presentation/d/1sKrMTB52ngP9X5mUMVpc3e8BrSgj5WnZjdV3A22qN5w/edit?usp=sharing",
-    imageUrl: "/images/config-manager.png"
+    imageUrl: "/images/r.png"
   },
   {
     title: "Care o'Clock",
@@ -120,7 +120,7 @@ export default function Projects() {
       <div className="flex overflow-x-auto overflow-y-visible mt-0 pt-3 pb-3 mb-0 scrollbar-hide">
         <div className="flex space-x-8 animate-scroll-right w-max">
           {[...topProjects, ...topProjects, ...topProjects, ...topProjects, ...topProjects, ...topProjects].map((project, index) => (
-            <div className="flex-none w-[350px]">
+            <div className="flex-none w-[380px]">
               <ProjectCard {...project} />
             </div>
           ))}
@@ -131,7 +131,7 @@ export default function Projects() {
       <div className="flex overflow-x-auto pb-8 pt-2 scrollbar-hide">
         <div className="flex space-x-8 animate-scroll-left w-max">
           {[...bottomProjects, ...bottomProjects, ...bottomProjects, ...bottomProjects, ...bottomProjects, ...bottomProjects].map((project, index) => (
-            <div className="flex-none w-[350px]">
+            <div className="flex-none w-[380px]">
               <ProjectCard {...project} />
             </div>
           ))}

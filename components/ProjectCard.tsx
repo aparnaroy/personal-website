@@ -64,12 +64,12 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <motion.div 
-      className="group relative w-[350px] h-[300px] mt-2 rounded-lg overflow-hidden shadow-[0_0_10px_rgba(0,0,0,0.23)] flex flex-col"
+      className="group relative w-[385px] h-[315px] mt-2 rounded-lg overflow-hidden shadow-[0_0_10px_rgba(0,0,0,0.23)] flex flex-col"
       whileHover={{ scale: 1.03 }}
       transition={{ duration: 0.3 }}
     >
       {/* Image */}
-      <div className="relative w-full h-[215px] group/image overflow-hidden">
+      <div className="relative w-full h-[230px] group/image overflow-hidden">
         <Image
           src={imageUrl}
           alt={title}

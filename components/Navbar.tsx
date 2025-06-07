@@ -37,7 +37,7 @@ export default function Navbar() {
       transition={{ duration: 0.5 }}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-[74px]">
           <ScrollLink
             to="hero"
             smooth={true}
@@ -54,7 +54,7 @@ export default function Navbar() {
                 to="about"
                 smooth={true}
                 duration={500}
-                offset={-80}
+                offset={-70}
                 className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer"
                 onClick={handleNavLinkClick}
               >
@@ -64,7 +64,7 @@ export default function Navbar() {
                 to="skills"
                 smooth={true}
                 duration={500}
-                offset={-40}
+                offset={-35}
                 className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer"
                 onClick={handleNavLinkClick}
               >
@@ -74,7 +74,7 @@ export default function Navbar() {
                 to="projects"
                 smooth={true}
                 duration={500}
-                offset={-90}
+                offset={-80}
                 className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer"
                 onClick={handleNavLinkClick}
               >
@@ -84,7 +84,7 @@ export default function Navbar() {
                 to="experience"
                 smooth={true}
                 duration={500}
-                offset={-80}
+                offset={-70}
                 className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer"
                 onClick={handleNavLinkClick}
               >
@@ -148,7 +148,7 @@ export default function Navbar() {
                   to="about"
                   smooth={true}
                   duration={500}
-                  offset={-80}
+                  offset={-70}
                   className="block text-center text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer"
                   onClick={handleNavLinkClick}
                 >
@@ -158,7 +158,7 @@ export default function Navbar() {
                   to="skills"
                   smooth={true}
                   duration={500}
-                  offset={-40}
+                  offset={-35}
                   className="block text-center text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer"
                   onClick={handleNavLinkClick}
                 >
@@ -168,7 +168,7 @@ export default function Navbar() {
                   to="projects"
                   smooth={true}
                   duration={500}
-                  offset={-90}
+                  offset={-80}
                   className="block text-center text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer"
                   onClick={handleNavLinkClick}
                 >
@@ -178,7 +178,7 @@ export default function Navbar() {
                   to="experience"
                   smooth={true}
                   duration={500}
-                  offset={-80}
+                  offset={-70}
                   className="block text-center text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer"
                   onClick={handleNavLinkClick}
                 >
