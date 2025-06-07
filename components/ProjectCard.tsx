@@ -76,12 +76,12 @@ export default function ProjectCard({
         <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
           <div className="p-4 w-full translate-y-10 group-hover:translate-y-0 transition-transform duration-300">
             <p className="text-[13.5px] text-white mb-2.5">{description}</p>
-            <div className="flex space-x-4 mb-1">
+            <div className="flex space-x-4 mb-0">
               <a
                 href={githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-white font-semibold hover:text-[#c181fc] text-[15px] transition-all duration-200"
+                className="flex items-center text-white font-bold hover:text-[#c181fc] text-[15.5px] transition-all duration-200"
               >
                 <FiGithub className="mr-1" />
                 GitHub
@@ -91,7 +91,7 @@ export default function ProjectCard({
                   href={demoLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center text-white font-semibold hover:text-primary text-[15px] transition-all duration-200"
+                  className="flex items-center text-white font-bold hover:text-primary text-[15.5px] transition-all duration-200"
                 >
                   <FiExternalLink className="mr-1" />
                   Live Demo
@@ -109,7 +109,7 @@ export default function ProjectCard({
           {technologies.map((tech, index) => (
             <span
               key={index}
-              className={`px-1.5 py-0.5 text-[10.5px] rounded-full ${getTechColor(tech)}`}
+              className={`px-1.5 py-0.5 text-[11px] rounded-full ${getTechColor(tech)}`}
             >
               {tech}
             </span>

@@ -45,7 +45,7 @@ const projects = [
   },
   {
     title: "Doodle",
-    description: "A lightweight drawing app featuring custom brush sizes, color and opacity controls, an eraser, and doodle saving. Focused on intuitive UI and smooth drawing experience.",
+    description: "A drawing app featuring custom brush sizes, color and opacity controls, an eraser, and doodle saving. Focused on intuitive UI and smooth drawing experience.",
     technologies: ['React', 'TypeScript', 'HTML/CSS'],
     githubLink: "https://github.com/aparnaroy/TalkToTheHand",
     demoLink: "https://talk-to-the-hand.vercel.app",
