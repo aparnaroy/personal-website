@@ -47,7 +47,7 @@ const projects = [
   {
     title: "Doodle",
     description: "A drawing app featuring custom brush sizes, color and opacity controls, an eraser, and doodle saving. Focused on intuitive UI and smooth drawing experience.",
-    technologies: ['React', 'TypeScript', 'HTML/CSS'],
+    technologies: ['Java', 'Android Studio', 'XML'],
     githubLink: "https://github.com/aparnaroy/Doodle",
     videoLink: "https://youtu.be/OoudZc0LD0w",
     imageUrl: "/images/doodle.png"
@@ -56,9 +56,9 @@ const projects = [
     title: "Taskly",
     description: "A to-do list app developed in 3 different versions/stacks, each featuring user authentication, data storage, and secure hosting: 1) Firebase, 2) Flask/MySQL, and 3) MongoDB/Node.js/Express on AWS EC2.",
     technologies: ['Firebase', 'Flask', 'MySQL', 'MongoDB', 'Node.js', 'Express', 'AWS EC2', 'JavaScript', 'HTML/CSS'],
-    githubLink: "https://github.com/aparnaroy/TalkToTheHand",
-    liveLink: "https://talk-to-the-hand.vercel.app",
-    imageUrl: "/images/talk-to-the-hand.png"
+    githubLink: "https://github.com/aparnaroy/Taskly-Firebase",
+    liveLink: "https://taskly2do.web.app",
+    imageUrl: "/images/taskly.png"
   },
   {
     title: "StackPack Journey",
