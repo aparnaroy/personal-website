@@ -66,11 +66,11 @@ export default function ExperienceCard({
             </li>
           ))}
         </ul>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-1.5">
           {skills.map((skill, index) => (
             <span
               key={index}
-              className="px-2 py-1 text-xs md:text-[13px] bg-primary/10 text-primary rounded-full"
+              className="px-2 py-1 text-xs md:text-[12px] bg-primary/10 text-primary rounded-full"
             >
               {skill}
             </span>
