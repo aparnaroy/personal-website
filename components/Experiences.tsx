@@ -76,7 +76,7 @@ const experiences = [
     company: 'Virginia Commonwealth University',
     period: 'May 2022 - Aug 2022',
     description: [
-      'Created an automated testing tool for domain-specific chatbots to refine and augment the training set using semantic clustering and a paraphrasing model, enhancing the chatbots\' ability to correctly classify intents by 5%.',
+      'Created an automated testing tool for chatbots to refine and augment the training set using semantic clustering and a paraphrasing model, enhancing the chatbots\' ability to correctly classify intents by 5%.',
       'Crafted and optimized Python scripts to evaluate the performance of natural-language understanding models.'
     ], 
     skills: ['Python', 'Colab Notebook', 'Natural Language Processing', 'Semantic Clustering'],
