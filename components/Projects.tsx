@@ -45,14 +45,6 @@ const projects = [
     imageUrl: "/images/step-to-the-beat.png"
   },
   {
-    title: "Doodle",
-    description: "A drawing app featuring custom brush sizes, color and opacity controls, an eraser, and doodle saving. Focused on intuitive UI and smooth drawing experience.",
-    technologies: ['Java', 'Android Studio', 'XML'],
-    githubLink: "https://github.com/aparnaroy/Doodle",
-    videoLink: "https://youtu.be/OoudZc0LD0w",
-    imageUrl: "/images/doodle.png"
-  },
-  {
     title: "Taskly",
     description: "A to-do list app developed in 3 different versions/stacks, each featuring user authentication, data storage, and secure hosting: 1) Firebase, 2) Flask/MySQL, and 3) MongoDB/Node.js/Express on AWS EC2.",
     technologies: ['Firebase', 'Flask', 'MySQL', 'MongoDB', 'Node.js', 'Express', 'AWS EC2', 'JavaScript', 'HTML/CSS'],
@@ -78,36 +70,34 @@ const projects = [
     imageUrl: "/images/mamas-freezeria.png"
   },
   {
+    title: "Doodle",
+    description: "A drawing app featuring custom brush sizes, color and opacity controls, an eraser, and doodle saving. Focused on intuitive UI and smooth drawing experience.",
+    technologies: ['Java', 'Android Studio', 'XML'],
+    githubLink: "https://github.com/aparnaroy/Doodle",
+    videoLink: "https://youtu.be/OoudZc0LD0w",
+    imageUrl: "/images/doodle.png"
+  },
+  {
     title: "Planet Garden",
     description: "An e-commerce site for landscaping and gardening products. Features 3 levels of permissions: users can shop and make changes to their cart, admins can manage/edit products, and the CEO can manage the available inventory and all users.",
     technologies: ['React', 'TypeScript', 'HTML/CSS'],
-    githubLink: "https://github.com/aparnaroy/TalkToTheHand",
-    liveLink: "https://talk-to-the-hand.vercel.app",
-    imageUrl: "/images/talk-to-the-hand.png"
-  },
-  {
-    title: "GoLocal",
-    description: "Developed in the HenHacks 2023 hackathon, this website facilitates communication between small Delaware businesses and their communities, promoting a culture of belonging and supporting local businesses. Includes a chatbot for quick customer support.",
-    technologies: ['React', 'TypeScript', 'HTML/CSS'],
-    githubLink: "https://github.com/aparnaroy/TalkToTheHand",
-    liveLink: "https://talk-to-the-hand.vercel.app",
-    imageUrl: "/images/talk-to-the-hand.png"
+    githubLink: "https://github.com/aparnaroy/Team15-PlanetGarden",
+    liveLink: "https://aparnaroy.github.io/Team15-PlanetGarden",
+    imageUrl: "/images/planet-garden.png"
   },
   {
     title: "Binary Clock",
     description: "A program that displays a clock with time values represented in binary using shell scripts. Toggles between 24-hour and 12-hour displays when given OS signals.",
-    technologies: ['React', 'TypeScript', 'HTML/CSS', 'Unix'],
-    githubLink: "https://github.com/aparnaroy/TalkToTheHand",
-    liveLink: "https://talk-to-the-hand.vercel.app",
-    imageUrl: "/images/talk-to-the-hand.png"
+    technologies: ['C', 'Bash', 'Shell Scripting', 'Unix'],
+    githubLink: "https://github.com/aparnaroy/Binary-Clock",
+    imageUrl: "/images/binary-clock.png"
   },
   {
     title: "Desh",
-    description: "A custom shell that replicates core terminal functionality, supporting both built-in and external commands. Runs interactively by default or executes a script file if provided.",
-    technologies: ['React', 'TypeScript', 'HTML/CSS'],
-    githubLink: "https://github.com/aparnaroy/TalkToTheHand",
-    liveLink: "https://talk-to-the-hand.vercel.app",
-    imageUrl: "/images/talk-to-the-hand.png"
+    description: "A custom shell built from scratch that replicates core terminal functionality, supporting both built-in and external commands. Runs interactively by default or executes a script file if provided.",
+    technologies: ['C', 'Unix', 'Shell Programming'],
+    githubLink: "https://github.com/aparnaroy/desh",
+    imageUrl: "/images/desh.png"
   }
 ];
 

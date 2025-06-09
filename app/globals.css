@@ -67,7 +67,7 @@ body {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-380px * 7 - 2rem * 7)); /* card width * number of cards + gap * number of gaps */
+    transform: translateX(calc(-380px * 6 - 2rem * 6)); /* card width * number of cards + gap * number of gaps */
   }
 }
 
@@ -81,11 +81,11 @@ body {
 }
 
 .animate-scroll-right {
-  animation: scroll-right 42s linear infinite;
+  animation: scroll-right 40s linear infinite;
 }
 
 .animate-scroll-left {
-  animation: scroll-left 39s linear infinite;
+  animation: scroll-left 40s linear infinite;
 }
 
 /* Pause animation on hover */
