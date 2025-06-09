@@ -64,17 +64,18 @@ const projects = [
     title: "StackPack Journey",
     description: "A puzzle platform game that guides players to mastering stack manipulation. Equipped with a StackPack, players must strategically collect (push) and use (pop) items scattered throughout the world to overcome obstacles and ultimately reunite with their lost soulmate.",
     technologies: ['React', 'TypeScript', 'Phaser'],
-    githubLink: "https://github.com/aparnaroy/TalkToTheHand",
-    liveLink: "https://talk-to-the-hand.vercel.app",
-    imageUrl: "/images/talk-to-the-hand.png"
+    githubLink: "https://github.com/aparnaroy/StackPack-Journey",
+    liveLink: "https://ud-s24-cisc374.github.io/final-project-yellow",
+    videoLink: "https://drive.google.com/file/d/1VieNLLkLdERRm2x6FSnr-KLPQ-DvZZaL/view?usp=sharing",
+    imageUrl: "/images/stackpack-journey.png"
   },
   {
     title: "Mama's Freezeria",
     description: "A fresh take on Papa's Freezeria from CoolMathGames. A timed milkshake-making game where players race against the clock to drag and mix ingredients, tackling increasingly complex orders as the game progresses.",
-    technologies: ['React', 'TypeScript', 'HTML/CSS'],
-    githubLink: "https://github.com/aparnaroy/TalkToTheHand",
-    liveLink: "https://talk-to-the-hand.vercel.app",
-    imageUrl: "/images/talk-to-the-hand.png"
+    technologies: ['JavaScript', 'HTML/CSS'],
+    githubLink: "https://github.com/aparnaroy/mamas-freezeria",
+    liveLink: "https://ud-cisc474.github.io/cisc474-project1-group-3",
+    imageUrl: "/images/mamas-freezeria.png"
   },
   {
     title: "Planet Garden",
