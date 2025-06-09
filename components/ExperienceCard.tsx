@@ -40,7 +40,7 @@ export default function ExperienceCard({
       <div className="bg-white dark:bg-[#404040] shadow-lg hover:shadow-xl transition-shadow rounded-lg p-6">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
           <div className="flex items-center gap-4">
-            <div className="relative w-[60px] h-[60px]">
+            <div className="relative w-[60px] h-[60px] rounded-full overflow-hidden">
               <Image
                 src={logoUrl}
                 alt={`${company} logo`}
