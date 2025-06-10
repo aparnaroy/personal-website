@@ -47,7 +47,7 @@ export default function AboutSection() {
           <div className="bg-white dark:bg-[#404040] rounded-lg p-6 shadow-sm flex flex-col md:flex-row items-start gap-4">
             <div className="relative w-16 h-16 flex-shrink-0">
                 <Image
-                src="/images/ud-logo.png"
+                src="/images/ud.png"
                 alt="University Logo"
                 fill
                 className="object-contain rounded"
