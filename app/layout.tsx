@@ -14,6 +14,9 @@ const pacifico = Pacifico({
 export const metadata: Metadata = {
   title: 'Aparna Roy',
   description: 'Aparna Roy\'s Personal Portfolio Website',
+  icons: {
+    icon: '/favicon.ico',
+  },
 }
 
 export default function RootLayout({

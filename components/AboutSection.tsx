@@ -385,7 +385,7 @@ export default function AboutSection() {
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
                 <Image
-                  src="/images/profile.jpg"
+                  src="/images/aparna.png"
                   alt="Aparna Roy"
                   fill
                   className="object-cover"
@@ -420,7 +420,7 @@ export default function AboutSection() {
                     </button>
                   ))}
                 </div>
-                <div className="text-gray-600 dark:text-gray-300">
+                <div className="text-gray-600 dark:text-gray-300 leading-relaxed">
                   <p>
                     I'm a Software Engineer with a passion for software development and artificial intelligence.
                     I specialize in full-stack development and have experience working with various technologies and frameworks.
