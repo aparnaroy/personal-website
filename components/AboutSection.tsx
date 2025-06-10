@@ -403,7 +403,7 @@ export default function AboutSection() {
                     <button
                       key={index}
                       onClick={() => setActiveTab(index)}
-                      className={`px-2 py-2 sm:px-3 md:px-4 text-sm font-medium transition-all duration-300 relative ${
+                      className={`px-4 py-2 text-sm font-medium transition-all duration-300 relative ${
                         activeTab === index
                           ? 'text-primary'
                           : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
@@ -448,7 +448,7 @@ export default function AboutSection() {
                   <button
                     key={index}
                     onClick={() => setActiveTab(index)}
-                    className={`px-2 py-2 sm:px-3 md:px-4 text-sm font-medium transition-all duration-300 relative ${
+                    className={`px-4 py-2 text-sm font-medium transition-all duration-300 relative ${
                       activeTab === index
                         ? 'text-primary'
                         : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
