@@ -217,7 +217,7 @@ export default function AboutSection() {
                   <p className="text-gray-600 dark:text-gray-300">HenHacks 2025 (University of Delaware)</p>
                 </div>
                 <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                  2nd place - Health & Wellness Category
+                  2nd Place - Health & Wellness
                 </p>
               </div>
             </div>
@@ -228,7 +228,7 @@ export default function AboutSection() {
                   <p className="text-gray-600 dark:text-gray-300">HenHacks 2024 (University of Delaware)</p>
                 </div>
                 <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                  1st Place - LabWare Connections Hack
+                  1st Place - LabWare Connections
                 </p>
               </div>
             </div>
