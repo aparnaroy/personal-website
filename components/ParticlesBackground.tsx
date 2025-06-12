@@ -76,7 +76,7 @@ export default function ParticlesBackground({ className }: ParticlesBackgroundPr
             },
             links: {
               color: '#9640ed',
-              distance: 150,
+              distance: 170,
               enable: true,
               opacity: 0.5,
               width: 1,
@@ -94,7 +94,7 @@ export default function ParticlesBackground({ className }: ParticlesBackgroundPr
             number: {
               density: {
                 enable: true,
-                area: 800,
+                area: 700,
               },
               value: 70,
             },
