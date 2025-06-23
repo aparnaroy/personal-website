@@ -371,7 +371,7 @@ export default function AboutSection() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-0">
           {activeTab === 0 ? (
             <motion.div 
-              className="flex flex-col md:flex-row items-start gap-8 md:gap-16"
+              className="flex flex-col md:flex-row-reverse items-start gap-8 md:gap-16"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -385,7 +385,7 @@ export default function AboutSection() {
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
                 <Image
-                  src="/images/aparna.png"
+                  src="/images/aparna3.png"
                   alt="Aparna Roy"
                   fill
                   className="object-cover"

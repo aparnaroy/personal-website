@@ -49,70 +49,92 @@ export default function Home() {
       
       {/* Hero Section */}
       <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-10">
-        <ParticlesBackground className="absolute inset-0" />
-        <div className="container mx-auto px-4 text-center relative z-10 select-none">
-          <motion.h1 
-            className="text-6xl md:text-8xl font-fancy text-primary mb-12"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            Aparna Roy
-          </motion.h1>
-          <motion.div
-            className="text-2xl md:text-4xl font-bold mb-12 min-h-[48px] md:min-h-[72px]"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            {/* <div className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-[#e82389] via-[#8623e8] to-[#23c7e8]"> */}
-            <div className="inline-block">
-              <Typewriter
-                words={['Software Engineer', 'Full Stack Developer', 'AI Enthusiast']}
-                loop={true}
-                cursor
-                cursorStyle="_"
-                typeSpeed={70}
-                deleteSpeed={50}
-                delaySpeed={3000}
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 select-none ml-[7%] mr-[7%]">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+            {/* Left Side - Image */}
+            <motion.div
+              className="flex justify-center md:justify-start md:ml-0"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              <img 
+                src="/images/aparna.png"
+                alt="Aparna Roy headshot"
+                className="object-cover rounded-full shadow-lg"
+                style={{ width: 'clamp(12rem, 30vw, 28rem)', height: 'clamp(12rem, 30vw, 28rem)' }}
               />
+            </motion.div>
+
+            {/* Right Side - Text */}
+            <div className="text-center md:text-left w-full md:w-1/2 md:ml-auto">
+              <motion.h1 
+                style={{ fontSize: 'clamp(3.75rem, 7vw, 6rem)' }}
+                className="font-fancy text-primary mb-[6%]"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+              >
+                Aparna Roy
+              </motion.h1>
+
+              <motion.div
+                style={{ fontSize: 'clamp(1.5rem, 3vw, 2.25rem)' }}
+                className="font-bold mb-8 min-h-[48px] md:min-h-[72px]"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+              >
+                <div className="inline-block">
+                  <Typewriter
+                    words={['Software Engineer', 'Full Stack Developer', 'AI Enthusiast']}
+                    loop={true}
+                    cursor
+                    cursorStyle="_"
+                    typeSpeed={70}
+                    deleteSpeed={50}
+                    delaySpeed={3000}
+                  />
+                </div>
+              </motion.div>
+
+              <motion.div
+                className="flex justify-center md:justify-start space-x-4"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+              >
+                <motion.a 
+                  href="https://github.com/aparnaroy" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-2xl hover:text-primary transition-colors"
+                  whileHover={{ y: -5, scale: 1.1 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                >
+                  <FiGithub />
+                </motion.a>
+                <motion.a 
+                  href="https://linkedin.com/in/aparna-roy1" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-2xl hover:text-primary transition-colors"
+                  whileHover={{ y: -5, scale: 1.1 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                >
+                  <FiLinkedin />
+                </motion.a>
+                <motion.a 
+                  href="mailto:deviroy2@gmail.com" 
+                  className="text-2xl hover:text-primary transition-colors"
+                  whileHover={{ y: -5, scale: 1.1 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                >
+                  <FiMail />
+                </motion.a>
+              </motion.div>
             </div>
-          </motion.div>
-          <motion.div
-            className="flex justify-center space-x-4"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            <motion.a 
-              href="https://github.com/aparnaroy" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-2xl hover:text-primary transition-colors"
-              whileHover={{ y: -5, scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}
-            >
-              <FiGithub />
-            </motion.a>
-            <motion.a 
-              href="https://linkedin.com/in/aparna-roy1" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-2xl hover:text-primary transition-colors"
-              whileHover={{ y: -5, scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}
-            >
-              <FiLinkedin />
-            </motion.a>
-            <motion.a 
-              href="mailto:deviroy2@gmail.com" 
-              className="text-2xl hover:text-primary transition-colors"
-              whileHover={{ y: -5, scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}
-            >
-              <FiMail />
-            </motion.a>
-          </motion.div>
+          </div>
         </div>
       </section>
 
