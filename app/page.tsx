@@ -53,16 +53,16 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
             {/* Left Side - Image */}
             <motion.div
-              className="flex justify-center md:justify-start md:ml-0"
+              className="flex justify-center md:justify-start md:ml-0 gradient-border"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.3 }}
+              style={{ width: 'clamp(12rem, 30vw, 28rem)', height: 'clamp(12rem, 30vw, 28rem)' }}
             >
               <img 
                 src="/images/aparna.png"
                 alt="Aparna Roy headshot"
-                className="object-cover rounded-full shadow-lg"
-                style={{ width: 'clamp(12rem, 30vw, 28rem)', height: 'clamp(12rem, 30vw, 28rem)' }}
+                className="object-cover rounded-full shadow-lg w-full h-full"
               />
             </motion.div>
 
