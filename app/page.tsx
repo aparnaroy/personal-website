@@ -6,7 +6,6 @@ import { useInView } from 'react-intersection-observer'
 import { FiGithub, FiLinkedin, FiMail, FiSun, FiMoon } from 'react-icons/fi'
 import { useTheme } from '../components/ThemeProvider'
 import Navbar from '../components/Navbar'
-import ExperienceCard from '../components/ExperienceCard'
 import ContactForm from '../components/ContactForm'
 import ParticlesBackground from '../components/ParticlesBackground'
 import { Typewriter } from 'react-simple-typewriter'
@@ -57,11 +56,11 @@ export default function Home() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              style={{ width: 'clamp(12rem, 30vw, 28rem)', height: 'clamp(12rem, 30vw, 28rem)' }}
+              style={{ width: 'clamp(15rem, 30vw, 28rem)', height: 'clamp(15rem, 30vw, 28rem)' }}
             >
               <img 
                 src="/images/aparna.png"
-                alt="Aparna Roy headshot"
+                alt="Aparna Roy"
                 className="object-cover rounded-full shadow-lg w-full h-full"
               />
             </motion.div>
@@ -69,8 +68,8 @@ export default function Home() {
             {/* Right Side - Text */}
             <div className="text-center md:text-left w-full md:w-1/2 md:ml-auto">
               <motion.h1 
-                style={{ fontSize: 'clamp(3.75rem, 7vw, 6rem)' }}
-                className="font-fancy text-primary mb-[6%]"
+                style={{ fontSize: 'clamp(3.75rem, 6.2vw, 6.5rem)' }}
+                className="font-fancy font-bold text-primary mb-[4%]"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}

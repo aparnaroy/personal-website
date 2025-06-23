@@ -1,14 +1,14 @@
 import React from 'react'
 import type { Metadata } from 'next'
-import { Inter, Pacifico } from 'next/font/google'
+import { Inter, Almarai } from 'next/font/google';
 import './globals.css'
 import { ThemeProvider } from '../components/ThemeProvider'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
-const pacifico = Pacifico({ 
-  weight: '400',
-  subsets: ['latin'],
-  variable: '--font-pacifico'
+const fancy_font = Almarai({
+  weight: ['400', '700'],
+  subsets: ['arabic'],
+  variable: '--font-fancy_font',
 })
 
 export const metadata: Metadata = {
@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} ${pacifico.variable} font-sans bg-white dark:bg-dark text-gray-900 dark:text-gray-100`}>
+      <body className={`${inter.variable} ${fancy_font.variable} font-sans bg-white dark:bg-dark text-gray-900 dark:text-gray-100`}>
         <ThemeProvider>
           <div className="relative z-10">
             {children}

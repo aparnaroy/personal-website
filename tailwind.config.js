@@ -19,7 +19,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['var(--font-inter)'],
-        fancy: ['var(--font-pacifico)'],
+        fancy: ['var(--font-fancy_font)'],
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',

@@ -44,7 +44,7 @@ export default function Navbar() {
             duration={500}
             className="text-2xl font-fancy text-primary cursor-pointer"
           >
-            Aparna Roy
+            <img src="/images/logo.png" alt="logo" className="w-[57px]" />
           </ScrollLink>
 
           <div className="flex items-center space-x-8">
