@@ -48,6 +48,7 @@ export default function Home() {
       
       {/* Hero Section */}
       <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-10">
+        {/* <ParticlesBackground></ParticlesBackground> */}
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 select-none ml-[7%] mr-[7%]">
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
             {/* Left Side - Image */}
