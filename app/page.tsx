@@ -49,15 +49,15 @@ export default function Home() {
       {/* Hero Section */}
       <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-10">
         {/* <ParticlesBackground></ParticlesBackground> */}
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 select-none ml-[7%] mr-[7%]">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 select-none">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 ml-[4%] mr-[3%] md:ml-[3%] md:mr-[2%] lg:ml-[6%] lg:mr-[5%]">
             {/* Left Side - Image */}
             <motion.div
-              className="flex justify-center md:justify-start md:ml-0 gradient-border"
+              className="flex justify-center md:justify-start gradient-border"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              style={{ width: 'clamp(15rem, 30vw, 28rem)', height: 'clamp(15rem, 30vw, 28rem)' }}
+              style={{ width: 'clamp(15rem, 31vw, 30rem)', height: 'clamp(15rem, 32vw, 30rem)' }}
             >
               <img 
                 src="/images/aparna.png"
@@ -67,9 +67,9 @@ export default function Home() {
             </motion.div>
 
             {/* Right Side - Text */}
-            <div className="text-center md:text-left w-full md:w-1/2 md:ml-auto">
+            <div className="text-center md:text-left w-full md:w-1/2 md:ml-auto md:pl-[20px]">
               <motion.h1 
-                style={{ fontSize: 'clamp(3.75rem, 6.2vw, 6.5rem)' }}
+                style={{ fontSize: 'clamp(2.7rem, 5.8vw, 6.5rem)' }}
                 className="font-fancy font-bold text-primary mb-[4%]"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
