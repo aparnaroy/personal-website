@@ -8,11 +8,11 @@ const FloatingOrbs: React.FC = () => {
     baseDx: number;
     baseDy: number;
     size: number;
-    phase: number; // for oscillation phase
+    phase: number;
   };
   
   const [orbs, setOrbs] = useState<Orb[]>([
-    { id: 0, x: 10, y: 200, baseDx: 0.4, baseDy: 0.01, size: 300, phase: 0 },
+    { id: 0, x: 10, y: 200, baseDx: 0.4, baseDy: 0.01, size: 260, phase: 0 },
     { id: 1, x: 1300, y: 750, baseDx: -0.3, baseDy: 0.01, size: 400, phase: Math.PI },
   ]);
 
@@ -39,7 +39,7 @@ const FloatingOrbs: React.FC = () => {
           let newBaseDx = orb.baseDx;
           let newBaseDy = orb.baseDy;
 
-          // Bounce off edges horizontally (check center only)
+          // Bounce off edges horizontally (center only)
           if (newX < 0) {
             newX = 0;
             newBaseDx = -newBaseDx;
@@ -48,7 +48,7 @@ const FloatingOrbs: React.FC = () => {
             newBaseDx = -newBaseDx;
           }
 
-          // Bounce off edges vertically (check center only)
+          // Bounce off edges vertically (center only)
           if (newY < 0) {
             newY = 0;
             newBaseDy = -newBaseDy;
@@ -87,14 +87,16 @@ const FloatingOrbs: React.FC = () => {
           style={{
             width: size,
             height: size,
-            transform: "translate(-50%, -50%)",
-            opacity: 0.12,
+            transform: "translate(-50%, -50%) translateZ(0)",
+            opacity: 0.13,
             filter: "blur(50px)",
             backgroundSize: "350% 350%",
             left: x,
             top: y,
             zIndex: 0,
             position: "absolute",
+            willChange: "transform, filter, opacity, background-position",
+            backfaceVisibility: "hidden",
           }}
         />
       ))}
@@ -110,13 +112,13 @@ const FloatingOrbs: React.FC = () => {
         }
         @keyframes shiftColors {
             0% {
-              background-position: 0% 50%; /* blue */
+              background-position: 0% 50%;
             }
             50% {
-              background-position: 100% 50%; /* purple */
+              background-position: 100% 50%;
             }
             100% {
-              background-position: 0% 50%; /* pink */
+              background-position: 0% 50%;
             }
         }
       `}</style>
