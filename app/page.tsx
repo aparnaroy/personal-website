@@ -69,7 +69,7 @@ export default function Home() {
             {/* Right Side - Text */}
             <div className="text-center md:text-left w-full md:w-1/2 lg:ml-auto md:pl-[20px]">
               <motion.h1 
-                style={{ fontSize: 'clamp(3.3rem, 5.8vw, 6.5rem)' }}
+                style={{ fontSize: 'clamp(3.5rem, 5.8vw, 6.5rem)' }}
                 className="font-fancy font-bold text-primary mb-[4%]"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
