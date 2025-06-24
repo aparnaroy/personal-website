@@ -268,8 +268,20 @@ export default function AboutSection() {
       content: (
         <div className="space-y-6">
           <div className="bg-white dark:bg-[#404040] rounded-lg p-6 shadow-sm">
-            <h3 className="text-xl font-bold mb-4">Awards</h3>
+            <h3 className="text-xl font-bold mb-4">Honors & Awards</h3>
             <div className="space-y-4">
+            <div className="flex items-start">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2 mt-2"></span>
+                <div className="flex-1">
+                  <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+                    <p className="text-gray-600 dark:text-gray-100 font-medium">Summa Cum Laude</p>
+                    <p className="text-sm text-gray-400 dark:text-gray-300">Spring 2025</p>
+                  </div>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                    The highest Latin honor awarded to the top 1% of students in the college's graduating class.
+                  </p>
+                </div>
+              </div>
               <div className="flex items-start">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2 mt-2"></span>
                 <div className="flex-1">

@@ -15,7 +15,6 @@ import AboutSection from '../components/AboutSection'
 import FloatingDots from '../components/FloatingDots'
 import Projects from '@/components/Projects'
 import Experiences from '@/components/Experiences'
-import MovingOrbs from '@/components/FloatingOrbs'
 import FloatingOrbs from '@/components/FloatingOrbs'
 
 export default function Home() {
@@ -51,8 +50,8 @@ export default function Home() {
       {/* Hero Section */}
       <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-10">
         <FloatingOrbs />
-        
         {/* <ParticlesBackground></ParticlesBackground> */}
+        
         <div className="container mx-auto relative z-10 select-none">
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:ml-[3%] md:mr-[0%] lg:ml-[9.8%] lg:mr-[4%]">
             {/* Left Side - Image */}
