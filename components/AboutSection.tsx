@@ -302,7 +302,7 @@ export default function AboutSection() {
                     <p className="text-sm text-gray-400 dark:text-gray-300">Fall 2021 - Spring 2025</p>
                   </div>
                   <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                    Each year, the Delaware Higher Education Office selects one student to receive a full scholarship to the University of Delaware based on merit.
+                    Each year, the Delaware Department of Education selects one student to receive a full scholarship to the University of Delaware based on merit.
                   </p>
                 </div>
               </div>
