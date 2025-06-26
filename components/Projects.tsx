@@ -7,6 +7,7 @@ const projects = [
     title: "Capital One Configuration Manager",
     description: "A web tool developed for Capital One enabling users to manage configurations with version control, role-based permissions for user groups, and status/approval workflows.",
     technologies: ['Java', 'Spring Boot', 'AWS DynamoDB', 'AWS EC2', 'React', 'TypeScript', 'HTML/CSS'],
+    githubLink: "https://github.com/aparnaroy/Configuration-Manager",
     videoLink: "https://drive.google.com/file/d/1OXA6QFJDji1krYU02BBpknGINZUG1a9-/view?usp=sharing",
     slidesLink: "https://docs.google.com/presentation/d/1sKrMTB52ngP9X5mUMVpc3e8BrSgj5WnZjdV3A22qN5w/edit?usp=sharing",
     imageUrl: "/images/config-manager.png"
