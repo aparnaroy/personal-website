@@ -1,6 +1,6 @@
 # Aparna Roy's Personal Website
 
-A modern, interactive personal portfolio website built with Next.js, Tailwind CSS, and Framer Motion.
+This is my modern, interactive personal portfolio website built with Next.js, Tailwind CSS, and Framer Motion.
 
 ## Features
 
@@ -21,20 +21,19 @@ A modern, interactive personal portfolio website built with Next.js, Tailwind CS
 - TypeScript
 - Tailwind CSS
 - Framer Motion
-- React Icons
-- React Scroll
-- React Type Animation
 - TSParticles
 
 ## Getting Started
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/aparnaroy/personal-website.git
 cd personal-website
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 # or
@@ -42,6 +41,7 @@ yarn install
 ```
 
 3. Run the development server:
+
 ```bash
 npm run dev
 # or
@@ -50,39 +50,17 @@ yarn dev
 
 4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Project Structure
+## Notes for Updates
 
-```
-personal-website/
-├── app/
-│   ├── layout.tsx
-│   ├── page.tsx
-│   └── globals.css
-├── components/
-│   ├── Navbar.tsx
-│   ├── ProjectCard.tsx
-│   ├── ExperienceCard.tsx
-│   ├── ContactForm.tsx
-│   ├── ThemeProvider.tsx
-│   └── ParticlesBackground.tsx
-├── public/
-│   └── images/
-├── package.json
-├── tailwind.config.js
-└── README.md
-```
-
-## Customization
-
-1. Update your personal information in `app/page.tsx`
-2. Add your project images to the `public/images` directory
-3. Modify the color scheme in `tailwind.config.js`
-4. Update the particle effects in `components/ParticlesBackground.tsx`
+1. Website layout/structure is in `app/page.tsx`
+2. Project images are in the `public/images` directory
+3. Color scheme is defined in `tailwind.config.js`
+4. Particles background is in `components/FloatingDots.tsx`
 
 ## Deployment
 
-The easiest way to deploy this website is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
+This website is set for automatic deployment using [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+This project is licensed under the MIT License - see the LICENSE file for details.
