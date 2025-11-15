@@ -62,7 +62,3 @@ yarn dev
 ## Deployment
 
 This website automatically deploys on update using [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
