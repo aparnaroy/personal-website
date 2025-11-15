@@ -37,7 +37,7 @@ import {
   SiNextdotjs,
   SiTailwindcss
 } from 'react-icons/si'
-import { FaJava, FaMicrosoft } from 'react-icons/fa'
+import { FaJava } from 'react-icons/fa'
 
 interface Skill {
   name: string
