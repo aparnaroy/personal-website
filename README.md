@@ -22,6 +22,8 @@ This is my modern, interactive personal portfolio website built with Next.js, Ta
 - Tailwind CSS
 - Framer Motion
 - TSParticles
+- EmailJS
+- Vercel
 
 ## Getting Started
 
