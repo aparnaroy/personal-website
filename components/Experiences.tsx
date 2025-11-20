@@ -10,10 +10,11 @@ const experiences = [
     period: 'Jul 2025 - Present',
     description: [
       'Build and enhance a money laundering detection web application for the Consumer & Community Banking LOB, reducing investigation time and enhancing user experience across the business.',
-      'Contribute to both core and cross-functional teams to develop enterprise-wide tools that boost efficiency and deliver a unified experience.',
-      'Ensure stable, compliant, and high-quality releases through comprehensive automated testing and CI/CD pipelines.'
+      'Contribute to both core and cross-functional teams to develop enterprise-wide tools that boost efficiency by integrating applications across the business.',
+      'Perform comprehensive multi-level testing and continuous validation across services to ensure application reliability.',
+      'Streamline deployments through CI/CD pipelines, accelerating release cycles while maintaining stability and quality.'
     ],
-    skills: ['React', 'TypeScript', 'Java', 'Spring Boot', 'HTML/CSS'],
+    skills: ['React', 'TypeScript', 'Java', 'Spring Boot', 'HTML/CSS', 'AWS Lambda', 'Jenkins'],
     logoUrl: '/images/chase.png',
   },
   {
