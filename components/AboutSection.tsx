@@ -186,7 +186,7 @@ export default function AboutSection() {
                 <span className="w-2 h-2 bg-primary rounded-full mr-2 mt-2"></span>
                 <div className="flex-1">
                   <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
-                    <p className="text-gray-600 dark:text-gray-300 text-[0.95rem] sm:text-[1rem]">CS+ Social Good (CSSG)</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-[0.95rem] sm:text-[1rem]">CS + Social Good (CSSG)</p>
                   </div>
                 </div>
               </div>
