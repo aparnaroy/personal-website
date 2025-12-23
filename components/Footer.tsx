@@ -39,7 +39,7 @@ export default function Footer() {
             </motion.a>
           </div>
           <p className="text-gray-600 dark:text-gray-300 text-center">
-            © {currentYear} Aparna Roy. All rights reserved.
+            Copyright © {currentYear} Aparna Roy. All rights reserved.
           </p>
         </div>
       </div>
