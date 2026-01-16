@@ -9,12 +9,13 @@ const experiences = [
     company: 'JPMorgan Chase & Co.',
     period: 'Jul 2025 - Present',
     description: [
-      'Build and enhance a money-laundering detection web application for the Consumer & Community Banking LOB, reducing investigation time and enhancing user experience across the business.',
-      'Contribute to both core and cross-functional teams to develop enterprise-wide tools that boost efficiency by integrating applications across the business.',
-      'Perform comprehensive multi-level testing and continuous validation across services to ensure application reliability.',
-      'Streamline deployments through CI/CD pipelines, accelerating release cycles while maintaining stability and quality.'
+      'Build and enhance an anti-money laundering application using Java, Spring Boot, React, and TypeScript, improving investigation speed and analyst workflows for 5,000+ users across the firm.',
+      'Implement automated deployment pipelines and cloud infrastructure to support consistent, reliable releases, including configuring containers, routing, and role-based access controls.',
+      'Develop AI-driven features, including a summarization tool that aggregates insights to help analysts review cases faster.',
+      'Improve platform reliability by integrating automated multi-level testing and continuous validation into the release process.',
+      'Work as part of both a core team and a cross-functional team, developing enterprise-wide tools that boost efficiency by integrating applications and workflows.'
     ],
-    skills: ['React', 'TypeScript', 'Java', 'Spring Boot', 'HTML/CSS', 'AWS Lambda', 'Jenkins'],
+    skills: ['Java', 'Spring Boot', 'React', 'TypeScript', 'HTML/CSS', 'AWS ECS', 'AWS Lambda', 'Spinnaker', 'Jenkins', 'Docker', 'Cucumber'],
     logoUrl: '/images/chase.png',
   },
   {
@@ -37,7 +38,7 @@ const experiences = [
       'Developed an OLAP cube using SQL and PySpark to streamline data modeling and financial forecasting, enabling senior executives to track business performance and identify strategic opportunities, increasing visibility of key metrics by 50%.',
       'Assisted in the cloud data migration of over 1 billion records, leveraging Databricks to generate multiple on-cloud reporting tables.'
     ],
-    skills: ['SQL', 'PySpark', 'Databricks', 'Cloud Migration'],
+    skills: ['SQL', 'PySpark', 'Databricks', 'erwin Data Modeler', 'Cloud Migration', 'Bitbucket'],
     logoUrl: '/images/chase.png',
   },
   {
