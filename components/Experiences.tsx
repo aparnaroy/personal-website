@@ -15,7 +15,7 @@ const experiences = [
       'Improve platform reliability by integrating automated multi-level testing and continuous validation into the release process.',
       'Work as part of both a core team and a cross-functional team, developing enterprise-wide tools that boost efficiency by integrating applications and workflows.'
     ],
-    skills: ['Java', 'Spring Boot', 'React', 'TypeScript', 'HTML/CSS', 'AWS ECS', 'AWS Lambda', 'Spinnaker', 'Jenkins', 'Docker', 'Cucumber'],
+    skills: ['Java', 'Spring Boot', 'React', 'TypeScript', 'HTML/CSS', 'AWS ECS', 'AWS Lambda', 'Spinnaker', 'Jenkins', 'Docker'],
     logoUrl: '/images/chase.png',
   },
   {
