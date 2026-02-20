@@ -67,7 +67,7 @@ const skillCategories: SkillCategory[] = [
       { name: 'TypeScript', icon: <SiTypescript />, color: '#3178C6' },
       { name: 'R', icon: <SiR />, color: '#276DC3' },
       { name: 'Bash', icon: <SiLinux />, color: '#4EAA25' },
-      { name: 'SQL', icon: <FaDatabase />, color: '#336791' }
+      { name: 'SQL', icon: <FaDatabase />, color: '#E67E22' }
     ]
   },
   {
@@ -108,7 +108,7 @@ const skillCategories: SkillCategory[] = [
   {
     title: 'Cloud & DevOps',
     skills: [
-      { name: 'AWS ECS', icon: <SiAmazon />, color: '#232F3E' },
+      { name: 'AWS ECS', icon: <SiAmazon />, color: '#FF9900' },
       { name: 'AWS EC2', icon: <SiAmazon />, color: '#232F3E' },
       { name: 'AWS S3', icon: <SiAmazon />, color: '#232F3E' },
       { name: 'AWS DynamoDB', icon: <SiAmazon />, color: '#232F3E' },
