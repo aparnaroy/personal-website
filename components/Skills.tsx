@@ -26,6 +26,7 @@ import {
   SiGit,
   SiGithub,
   SiDocker,
+  SiTerraform,
   SiJenkins,
   SiJira,
   SiBitbucket,
@@ -35,9 +36,13 @@ import {
   SiFigma,
   SiSharp,
   SiNextdotjs,
-  SiTailwindcss
+  SiTailwindcss,
+  SiSwagger,
+  SiCucumber,
+  SiSonarqube,
+  SiRedis,
 } from 'react-icons/si'
-import { FaJava } from 'react-icons/fa'
+import { FaDatabase, FaFileAlt, FaJava } from 'react-icons/fa'
 
 interface Skill {
   name: string
@@ -61,7 +66,8 @@ const skillCategories: SkillCategory[] = [
       { name: 'JavaScript', icon: <SiJavascript />, color: '#F7DF1E' },
       { name: 'TypeScript', icon: <SiTypescript />, color: '#3178C6' },
       { name: 'R', icon: <SiR />, color: '#276DC3' },
-      { name: 'Bash', icon: <SiLinux />, color: '#4EAA25' }
+      { name: 'Bash', icon: <SiLinux />, color: '#4EAA25' },
+      { name: 'SQL', icon: <FaDatabase />, color: '#336791' }
     ]
   },
   {
@@ -82,7 +88,8 @@ const skillCategories: SkillCategory[] = [
       { name: 'Spring Boot', icon: <SiSpring />, color: '#6DB33F' },
       { name: 'Node.js', icon: <SiNodedotjs />, color: '#339933' },
       { name: 'Express', icon: <SiExpress />, color: '#000000' },
-      { name: 'Flask', icon: <SiFlask />, color: '#000000' }
+      { name: 'Flask', icon: <SiFlask />, color: '#000000' },
+      { name: 'Swagger', icon: <SiSwagger />, color: '#85EA2D' }
     ]
   },
   {
@@ -94,15 +101,20 @@ const skillCategories: SkillCategory[] = [
       { name: 'MySQL', icon: <SiMysql />, color: '#4479A1' },
       { name: 'Firebase', icon: <SiFirebase />, color: '#FFCA28' },
       { name: 'Databricks', icon: <SiDatabricks />, color: '#FF3621' },
-      { name: 'PySpark', icon: <SiPython />, color: '#E25A1C' }
+      { name: 'PySpark', icon: <SiPython />, color: '#E25A1C' },
+      { name: 'Redis', icon: <SiRedis />, color: '#DC382D' }
     ]
   },
   {
     title: 'Cloud & DevOps',
     skills: [
+      { name: 'AWS ECS', icon: <SiAmazon />, color: '#232F3E' },
       { name: 'AWS EC2', icon: <SiAmazon />, color: '#232F3E' },
       { name: 'AWS S3', icon: <SiAmazon />, color: '#232F3E' },
       { name: 'AWS DynamoDB', icon: <SiAmazon />, color: '#232F3E' },
+      { name: 'Amazon Bedrock', icon: <SiAmazon />, color: '#FF9900' },
+      { name: 'Terraform', icon: <SiTerraform />, color: '#7B42BC' },
+      { name: 'Spinnaker', icon: <SiDocker />, color: '#139BB4' }, 
       { name: 'Docker', icon: <SiDocker />, color: '#2496ED' },
       { name: 'Jenkins', icon: <SiJenkins />, color: '#D24939' },
       { name: 'Nginx', icon: <SiNginx />, color: '#009639' },
@@ -114,11 +126,14 @@ const skillCategories: SkillCategory[] = [
     skills: [
       { name: 'Git', icon: <SiGit />, color: '#F05032' },
       { name: 'GitHub', icon: <SiGithub />, color: '#181717' },
-      { name: 'BitBucket', icon: <SiBitbucket />, color: '#0052CC' },
+      { name: 'Bitbucket', icon: <SiBitbucket />, color: '#0052CC' },
       { name: 'Jira', icon: <SiJira />, color: '#0052CC' },
       { name: 'Postman', icon: <SiPostman />, color: '#FF6C37' },
       { name: 'JWTs', icon: <SiJavascript />, color: '#F7DF1E' },
-      { name: 'Figma', icon: <SiFigma />, color: '#F24E1E' }
+      { name: 'Figma', icon: <SiFigma />, color: '#F24E1E' },
+      { name: 'Cucumber', icon: <SiCucumber />, color: '#23D96C' },
+      { name: 'Gherkin', icon: <FaFileAlt />, color: '#6B7280' },
+      { name: 'SonarQube', icon: <SiSonarqube />, color: '#4E9BCD' },
     ]
   }
 ]

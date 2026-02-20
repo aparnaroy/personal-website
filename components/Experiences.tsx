@@ -10,7 +10,7 @@ const experiences = [
     period: 'Jul 2025 - Present',
     description: [
       'Build and enhance an anti-money laundering application using Java, Spring Boot, React, and TypeScript, improving investigation speed and analyst workflows for 5,000+ users across the firm.',
-      'Implement automated deployment pipelines and cloud infrastructure to support consistent, reliable releases, including configuring containers, routing, and role-based access controls.',
+      'Implement AWS ECS application deployments via Environment as Code (EaC), configuring secure cloud resources and enabling reliable production releases through automated pipelines.',
       'Develop AI-driven features, including a summarization tool that aggregates insights to help analysts review cases faster.',
       'Improve platform reliability by integrating automated multi-level testing and continuous validation into the release process.',
       'Work as part of both a core team and a cross-functional team, developing enterprise-wide tools that boost efficiency by integrating applications and workflows.'
